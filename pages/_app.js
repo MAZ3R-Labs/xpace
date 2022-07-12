@@ -37,15 +37,17 @@ function MyApp({ Component, pageProps }) {
         </Link>
         <Link href="/download-app">
           <li className="mr-6">
-            <a className="text-white hover:text-cyan-300">下載X-City</a>
+            <a className="text-amber-300 hover:text-cyan-300">下載X-City</a>
           </li>
         </Link>
       </ul>
     </nav>
-
-
-
   <Navbar/>
+
+
+
+
+
   </div>
   <Component {...pageProps} />
   </>
