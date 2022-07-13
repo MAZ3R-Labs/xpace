@@ -1,9 +1,7 @@
-import Footer from "../componenets/Footer";
-import Navbar from "../Componenets/Navbar";
-import Slide from "../componenets/Slide";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Slide from "../components/Slide";
 import "../styles/globals.css";
-import Link from "next/link";
-import Image from "next/image";
 
 function MyApp({ Component, pageProps }) {
   return (
