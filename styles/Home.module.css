@@ -115,12 +115,12 @@
   }
 }
 
-.premium {
-background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 29.3%, #05FFD2 36.53%, #14FF00 50.46%, #FAFF00 62.85%, #FA118E 77.29%, #FF18E8 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-font-family: 'Montserrat';
-font-style: normal;
+.round_rainbow_border{
+  border: 2px solid transparent;
+  border-image: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 29.3%, #05FFD2 36.53%, #14FF00 50.46%, #FAFF00 62.85%, #FA118E 77.29%, #FF18E8 100%);
+  border-image-slice: 1;
+  border-radius: 5px;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
 }

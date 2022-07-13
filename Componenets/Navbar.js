@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
@@ -24,7 +25,7 @@ const Navbar = () => {
             </Link>
             <Link href="/premium">
               <li className="mr-6">
-                <a className="text-white hover:text-cyan-300 premium">
+                <a className={styles.rainbow}>
                   Premium
                 </a>
               </li>
@@ -50,7 +51,7 @@ const Navbar = () => {
             </Link>
             <Link href="/login">
               <li className="mr-6 ">
-                <a className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+                <a className={ styles.login }>
                   登入
                 </a>
               </li>
