@@ -1,0 +1,10 @@
+.round_rainbow_border{
+    border: 3px solid transparent;
+    border-image: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 29.3%, #05FFD2 36.53%, #14FF00 50.46%, #FAFF00 62.85%, #FA118E 77.29%, #FF18E8 100%);
+    border-image-slice: 1;
+    border-radius: 5px;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    @apply inline-block text-sm px-4 py-2 leading-none text-white hover:text-teal-500 hover:bg-white mt-2 lg:mt-0;
+  }
