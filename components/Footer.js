@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-black h-44  ">
-        
         {/* Top line */}
         <div className="flex justify-between pt-10">
           <div className="self-center ">

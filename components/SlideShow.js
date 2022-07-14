@@ -54,8 +54,7 @@ const Slideshow = () => {
       <Slide {...properties}>
         {slideImages.map((slideImage, index) => (
           <div className={styles.each_slide_effect} key={index}>
-            <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-            </div>
+            <div style={{ backgroundImage: `url(${slideImage.url})` }}></div>
           </div>
         ))}
       </Slide>
