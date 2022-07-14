@@ -3,7 +3,7 @@ import Highlights from "../components/Highlights";
 import Rainbow from "../components/Rainbow";
 import Recommend from "../components/Recommend";
 import Slideshow from "../components/Slideshow";
-import Topic from "../components/Topic";
+import Topics from "../components/Topics";
 
 export default function Home() {
   return (
@@ -34,57 +34,15 @@ export default function Home() {
               </div>
               <div className="mt-6">
                 <Rainbow text="快來吧夥伴！就是現在！" />
-                <div className="flex">
-                  <Topic />
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                </div>
+                <Topics/>
               </div>
               <div className="mt-6">
                 <Rainbow text="社群房間" />
-                <div className="flex">
-                  <Topic />
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                </div>
+                <Topics/>
               </div>
               <div className="mt-6">
                 <Rainbow text="個人房間" />
-                <div className="flex">
-                  <Topic />
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                  <div className="ml-12">
-                    <Topic />
-                  </div>
-                </div>
+                <Topics/>
               </div>
             </div>
           </div>
