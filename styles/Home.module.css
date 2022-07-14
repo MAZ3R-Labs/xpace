@@ -115,3 +115,11 @@
   }
 }
 
+.rainbow_box {
+  width: 2px;
+  height: 1550x;
+  background: linear-gradient(
+      0deg,#05FFFF 0.92%, #2C80FF 28.27%, #3834FF 50.46%, #FA118E 77.29%, #FF18E8 100%
+  );
+}
+
