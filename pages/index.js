@@ -2,7 +2,7 @@ import Head from "next/head";
 import Highlights from "../components/Highlights";
 import Rainbow from "../components/Rainbow";
 import Recommend from "../components/Recommend";
-import Slideshow from "../components/Slideshow";
+import Slideshow from "../components/SlideShow";
 import Topics from "../components/Topics";
 import styles from "../styles/Home.module.css";
 
