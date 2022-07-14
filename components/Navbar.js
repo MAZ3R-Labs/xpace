@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
         <Link href="/download-app">
           <li className="mr-6 self-center">
-            <a className="text-amber-300 hover:text-cyan-300">下載X-City</a>
+            <a className="text-amber-300 hover:text-cyan-300 font-semibold">下載X-City</a>
           </li>
         </Link>
       </ul>

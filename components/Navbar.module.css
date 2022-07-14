@@ -4,10 +4,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    @apply font-bold;
     }
 
 .login {
- @apply inline-block text-sm px-4 py-2 leading-none text-white hover:text-teal-500 hover:bg-white mt-2 lg:mt-0;
+ @apply inline-block text-sm px-4 py-2 leading-none text-white hover:text-teal-500 hover:bg-white mt-2 lg:mt-0 font-semibold;
   border: 2px solid transparent;
   border-image: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 29.3%, #05FFD2 36.53%, #14FF00 50.46%, #FAFF00 62.85%, #FA118E 77.29%, #FF18E8 100%);
   border-image-slice: 1;
