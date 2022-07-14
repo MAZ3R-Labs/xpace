@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6">
-                <Rainbow text="快來吧夥伴！就是現在！" />
+                <Rainbow text="社群房間" />
                 <div className="flex">
                   <Topic />
                   <div className="ml-12">
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-6">
-                <Rainbow text="快來吧夥伴！就是現在！" />
+                <Rainbow text="個人房間" />
                 <div className="flex">
                   <Topic />
                   <div className="ml-12">
