@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Highlights from "../components/Highlights";
-import Rainbow from "../components/Rainbow";
-import Recommend from "../components/Recommend";
-import Slideshow from "../components/SlideShow";
-import Topics from "../components/Topics";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,58 +9,49 @@ export default function Home() {
         <meta name="description" content="Xpace" />
         <link rel="icon" href="/icon.svg" />
       </Head>
-      <main className=" pt-10 ">
-        <div className="flex justify-center ">
+      <section>
+        <div className="flex justify-between">
+          
           {/* 左區 */}
-          <div className="w-100% mr-12">
-            {/* 幻燈片 */}
-            <div className="h-96 ml-40">
-              <Slideshow />
+          <div className="ml-20">
+            <div className="mt-40 ">
+              <img src="/surf_to_earn_banner.svg" />
             </div>
-            <div className="ml-10">
-              <Rainbow text="熱門話題  HOT！" />
-              <div className="flex justify-between mt-4">
-                <div className="mr-6">
-                  <Highlights />
-                </div>
-                <div className="mr-6">
-                  <Highlights />
-                </div>
-                <div>
-                  <Highlights />
-                </div>
+            <div className="flex justify-start text-white font-bold font-[Montserrat] text-xl mt-10">
+              <div className="flex mr-14">
+                <img src="/icon1.svg" className="mr-2" />
+                <p>CLOSER</p>
               </div>
-              <div className="mt-9">
-                <Rainbow text="快來吧夥伴！就是現在！" />
-                <Topics />
+              <div className="flex mr-14">
+                <img src="/icon2.svg" className="mr-2" />
+                <p>RICHER</p>
               </div>
-              <div className="mt-9">
-                <Rainbow text="社群房間" />
-                <Topics />
+              <div className="flex mr-14">
+                <img src="/icon3.svg" className="mr-2" />
+                <p>HAPPIER</p>
               </div>
-              <div className="mt-9">
-                <Rainbow text="個人房間" />
-                <Topics />
-              </div>
+            </div>
+            <div className="text-white font-[Montserrat] text-sm mt-20">
+                <p>The XPACE team is building a super cool and convenient social platform</p>
+                <p>that you can govern and earn from your data in this social platform, X-city. </p>
+                <p>You can think of it as a hybrid of Reddit, Gather Town, and Facebook.</p>
+            </div>
+            <div className=" mt-[60px] mb-80 ">
+                <button className={styles.discover}>Discover X-city </button>
             </div>
           </div>
 
-          {/* 中央分界線 */}
-          <div className={styles.rainbow_box}></div>
+          {/* 太空人 */}
+          <div>
+          <img src="Astronaut.png" className=" w-[631.52px] h-[846.24px]" />
+          </div>
 
-          {/* 右區 */}
-          <div className="mr-10 mt-24 ml-6">
-            <div className="ml-[88px]">
-              <Rainbow text="推薦活動" />
-            </div>
-            <Recommend />
-            <Recommend />
-            <Recommend />
-            <Recommend />
+          {/* 側邊欄 */}
+          <div className="mr-10">
+            <div className={styles.link_bar} />
           </div>
         </div>
-      </main>
-      <div className="h-11"></div>
+      </section>
     </div>
   );
 }
