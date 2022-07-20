@@ -15,11 +15,8 @@
   }
   
   .link_bar{
-    position: absolute;
+
 width: 0px;
 height: 212px;
-left: 51px;
-top: 1px;
-
 border: 0.5px solid rgba(255, 255, 255, 0.7);
   }
