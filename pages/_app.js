@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
 
     <div className="dark">
     <Testbar/>
+
     </div>
     
       {/* <Navbar /> */}
