@@ -14,11 +14,11 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute top-0 left-full h-screen w-1/3 bg-black transform ${
-        open ? "-translate-x-full" : "translate-x-0"
-      } transition-transform duration-300 ease-in-out filter drop-shadow-lg `}
+      className={`absolute top-0 left-full h-screen w-1/2 bg-black z-50 transform ${
+        open ? "-translate-x-full block " : "hidden -translate-x-0"
+      } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
-      <div className="flex items-center justify-center filter drop-shadow-lg text-white bg-black h-20">
+      <div className="flex items-center justify-center filter drop-shadow-md text-white bg-black h-20">
         {/*logo container*/}
       </div>
       <div className="flex justify-start ml-6">
@@ -80,7 +80,7 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex justify-between filter drop-shadow-lg bg-black px-4 py-4 items-center">
+    <nav className="flex justify-between filter drop-shadow-md bg-black px-4 py-4 items-center z-[9999]">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex items-center">
         <Link href="/">
@@ -91,7 +91,7 @@ export default function Navbar() {
           </div>
         </Link>
         {/* desktop Navbar */}
-        <div className="hidden lg:flex">
+        <div className="hidden md:flex">
           <Link href="/chat">
             <div className="mr-10 self-center">
               <a className="text-white hover:text-cyan-300 font-semibold">
@@ -125,29 +125,29 @@ export default function Navbar() {
 
       <div className=" flex justify-end items-center">
       <Link href="/login">
-          <div className=" mr-10 lg:mr-20 self-center font-semibold">
+          <div className=" mr-10 md:mr-20 self-center font-semibold">
             <a className={styles.login}>Follow Us</a>
           </div>
         </Link>
         <div
-          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center lg:hidden"
+          className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
           onClick={() => {
             setOpen(!open);
           }}
         >
           {/* hamburger button */}
           <span
-            className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
+            className={`h-1 w-full bg-white rounded-md transform transition duration-300 ease-in-out ${
               open ? "rotate-45 translate-y-3.5" : ""
             }`}
           />
           <span
-            className={`h-1 w-full bg-white rounded-lg transition-all duration-300 ease-in-out ${
+            className={`h-1 w-full bg-white rounded-md transition-all duration-300 ease-in-out ${
               open ? "w-0" : "w-full"
             }`}
           />
           <span
-            className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
+            className={`h-1 w-full bg-white rounded-md transform transition duration-300 ease-in-out ${
               open ? "-rotate-45 -translate-y-3.5" : ""
             }`}
           />
