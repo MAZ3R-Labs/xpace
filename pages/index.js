@@ -99,9 +99,7 @@ export default function Home() {
             </div>
             <div className={styles.link_bar} />
           </div>
-        <div>
-          <p className="text-white">style</p>
-        </div>
+        
         </div>
       </section>
     </div>
