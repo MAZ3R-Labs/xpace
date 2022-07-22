@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <section id="Home">
-          <div className="lg:flex justify-between object-scale-down">
+          <div className="lg:mb-20 lg:flex justify-between object-scale-down">
             {/* 左區 */}
             <div className="lg:ml-20">
               <div className="lg:mt-40 ">
@@ -74,28 +74,28 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="Twitter.svg" className="w-6 h-6 " />
+                  <img src="/logo/Twitter.svg" className="w-6 h-6 " />
                 </a>
                 <a
                   href="https://www.discord.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="Discord.svg" className="w-6 h-6 mt-10" />
+                  <img src="/logo/Discord.svg" className="w-6 h-6 mt-10" />
                 </a>
                 <a
                   href="https://mirror.xyz/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="Mirror.svg" className="w-6 h-6 mt-10" />
+                  <img src="/logo/Mirror.svg" className="w-6 h-6 mt-10" />
                 </a>
                 <a
                   href="https://t.me/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src="Telegram.svg" className="w-6 h-6 mt-10" />
+                  <img src="/logo/Telegram.svg" className="w-6 h-6 mt-10" />
                 </a>
               </div>
               <div className={styles.link_bar} />
@@ -104,17 +104,18 @@ export default function Home() {
         </section>
         <section id="about">
           <div className="flex justify-between font-[Montserrat]">
-          <div className="text-white text-[40px]">
-            <p>ABOUT</p>
-            <p>VISION</p>
+            <div className="text-white text-[40px] mt-10 ml-20">
+              <p>ABOUT</p>
+              <p>VISION</p>
+            </div>
+            <div className="text-white flex justify-start z-10">
+              <p>start</p>
+            </div>
+            <div className=" mr-[100px] z-0">
+              <p>test</p>
+            </div>
           </div>
-          <div className="text-white">
-            test
-          </div>
-          </div>
-
         </section>
-
       </main>
     </div>
   );

@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link href="/">
           <li className="mr-24 ml-20 self-center">
             <a>
-              <Image src="/Logo.svg" width={87} height={17} />
+              <Image src="/logo/Logo.svg" width={87} height={17} />
             </a>
           </li>
         </Link>
