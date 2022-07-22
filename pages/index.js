@@ -103,17 +103,54 @@ export default function Home() {
           </div>
         </section>
         <section id="about">
-          <div className="flex justify-between font-[Montserrat]">
+          <div className="lg:pb-52 lg:flex justify-between font-[Montserrat]">
             <div className="text-white text-[40px] mt-10 ml-20">
               <p>ABOUT</p>
               <p>VISION</p>
             </div>
-            <div className="text-white flex justify-start z-10">
-              <p>start</p>
+            <div>
+              <div className={styles.about_bar}></div>
+              <div className="text-white mr-[100px] bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover">
+                <div className=" mr-72 mb-5 pb-5">
+                  <p className="text-4xl mb-5">Data Justice</p>
+                  <p>
+                    Being one part of the web 3.0 philosophy, Xpace dedicate to
+                    realizing a data justice
+                  </p>
+                  <p>
+                    world. The enormous profits of data should belong to data
+                    generators, not media
+                  </p>
+                  <p>
+                    magnates. Data generators, our users, are the boss of their
+                    data. With blockchain
+                  </p>
+                  <p>
+                    technology, the logs of authorization are recorded immutably
+                    and transparently.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.about_bar_1}></div>
+              <div className="text-white mr-[100px] bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
+                <div className=" mr-72 pb-5">
+                  <p className="text-4xl mb-5">Immersion</p>
+                  <p>
+                  Xpace wish you a brand new community experience, where you can meet 
+                  </p>
+                  <p>
+                  people who share the same interests as you and interact with them with
+                  </p>
+                  <p>
+                  exciting options. The immersive environments give you more inspiration 
+                  </p>
+                  <p>
+                  when you surf X-city.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className=" mr-[100px] z-0">
-              <p>test</p>
-            </div>
+            
           </div>
         </section>
       </main>

@@ -86,7 +86,7 @@ export default function Navbar() {
         <Link href="/">
           <div className="mr-24 ml-20 self-center">
             <a>
-              <Image src="/Logo.svg" width={87} height={17} />
+              <Image src="/logo/Logo.svg" width={87} height={17} />
             </a>
           </div>
         </Link>

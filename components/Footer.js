@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* 第二行 */}
-        <div className="flex justify-between z-10">
+        <div className="flex justify-between">
           <div className="self-top ">
             <ul className="flex">
               <li className="ml-16 ">
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" text-white flex justify-between self-center mt-5 z-10 ">
+          <div className=" text-white flex justify-between self-center mt-5 ">
             <ul className="flex mr-16">
               <li className="mr-6">
                 <a
@@ -66,7 +66,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Twitter.svg" width={24} height={24} />
+                  <Image src="/logo/Twitter.svg" width={24} height={24} />
                 </a>
               </li>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Discord.svg" width={24} height={24} />
+                  <Image src="/logo/Discord.svg" width={24} height={24} />
                 </a>
               </li>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Mirror.svg" width={24} height={24} />
+                  <Image src="/logo/Mirror.svg" width={24} height={24} />
                 </a>
               </li>
 
@@ -96,7 +96,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Telegram.svg" width={24} height={24} />
+                  <Image src="/logo/Telegram.svg" width={24} height={24} />
                 </a>
               </li>
             </ul>
