@@ -103,15 +103,15 @@ export default function Home() {
           </div>
         </section>
         <section id="about">
-          <div className="lg:pb-52 lg:flex justify-between font-[Montserrat]">
-            <div className="text-white text-[40px] mt-10 ml-20">
+          <div className="lg:flex justify-between font-[Montserrat]">
+            <div className="text-white text-[40px] mt-10 lg:ml-20">
               <p>ABOUT</p>
               <p>VISION</p>
             </div>
             <div>
               <div className={styles.about_bar}></div>
-              <div className="text-white mr-[100px] bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover">
-                <div className=" mr-72 mb-5 pb-5">
+              <div className="text-white lg:mr-[100px] bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover">
+                <div className=" lg:mr-72 mb-5 pb-5">
                   <p className="text-4xl mb-5">Data Justice</p>
                   <p>
                     Being one part of the web 3.0 philosophy, Xpace dedicate to
@@ -132,27 +132,143 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.about_bar_1}></div>
-              <div className="text-white mr-[100px] bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
-                <div className=" mr-72 pb-5">
+              <div className="text-white lg:mr-[100px] bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
+                <div className=" lg:mr-72 pb-5">
                   <p className="text-4xl mb-5">Immersion</p>
                   <p>
-                  Xpace wish you a brand new community experience, where you can meet 
+                    Xpace wish you a brand new community experience, where you
+                    can meet
                   </p>
                   <p>
-                  people who share the same interests as you and interact with them with
+                    people who share the same interests as you and interact with
+                    them with
                   </p>
                   <p>
-                  exciting options. The immersive environments give you more inspiration 
+                    exciting options. The immersive environments give you more
+                    inspiration
                   </p>
-                  <p>
-                  when you surf X-city.
-                  </p>
+                  <p>when you surf X-city.</p>
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
+        <div className="hidden lg:block h-[200px]"/>
+
+        <section id="Core features">
+          <div className="lg:flex justify-around text-white">
+            {/* 左 */}
+            <div>
+              <div className="text-[40px]">
+                <p>CORE</p>
+                <p>FEATURES</p>
+              </div>
+              <div className="mt-5">
+                <p>You can find fun social</p>
+                <p>experiences here and earn </p>
+                <p>real money.</p>
+              </div>
+            </div>
+
+            <div className="lg:flex">
+              {/* 中 */}
+              <div>
+                <div className="flex justify-start">
+                  <div className="mt-6">
+                    <img src="/core_icon/m_1.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">DAO Governance</p>
+                    <p>XPA DAO token holders can govern the </p>
+                    <p>X-city social platform by participating in </p>
+                    <p>on-chain governance.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/m_2.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Spaces/communities DAO</p>
+                    <p>Users can deploy DAO tokens for their own</p>
+                    <p>spaces/communities, then set rules and </p>
+                    <p>manage them by their own DAO token.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/m_3.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Treasury</p>
+                    <p>The XPACE owns an on-chain pot of funds </p>
+                    <p>for the promotion and development of the </p>
+                    <p>ecosystem.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/m_4.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">NFTs</p>
+                    <p>Turn your creations and spaces on XPACE </p>
+                    <p>into NFTs, and rent or sell them to others.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 右 */}
+              <div className="mt-[120px] lg:mt-0 lg:ml-16">
+                <div className="flex justify-start">
+                  <div className="mt-6">
+                    <img src="/core_icon/r_1.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Fun & Convenient</p>
+                    <p>High personalized friends recommendation, </p>
+                    <p>fun and convenient experience in </p>
+                    <p>communication.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/r_2.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Surf to earn & Rent to earn</p>
+                    <p>Surf to earn from advertisement slots and  </p>
+                    <p>the data you delegate (recorded on-chain) to </p>
+                    <p>XPACE. Rent advertisement slots in your </p>
+                    <p>space directly to advertisers.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/r_3.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Expand your estates</p>
+                    <p>Create and expand your land and spaces in </p>
+                    <p>the X-city world.</p>
+                  </div>
+                </div>
+                <div className="flex justify-start mt-[120px]">
+                  <div className="mt-6">
+                    <img src="/core_icon/r_4.svg" />
+                  </div>
+                  <div className="ml-8">
+                    <p className="text-2xl mb-4">Unique Algorithms</p>
+                    <p>XPACE's unique algorithms make your profit</p>
+                    <p>performance better.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="hidden lg:block h-[200px]"/>
+
       </main>
     </div>
   );
