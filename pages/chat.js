@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="description" content="Xpace" />
         <link rel="icon" href="/icon.svg" />
       </Head>
-      <main className=" pt-10 ">
+      <main className=" pt-10 z-40">
         <div className="flex justify-center ">
           {/* 左區 */}
           <div className="w-100% mr-12">

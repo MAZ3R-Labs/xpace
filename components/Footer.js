@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* 第二行 */}
-        <div className="flex justify-between">
+        <div className="flex justify-between z-10">
           <div className="self-top ">
             <ul className="flex">
               <li className="ml-16 ">
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" text-white flex justify-between self-center mt-5 ">
+          <div className=" text-white flex justify-between self-center mt-5 z-10 ">
             <ul className="flex mr-16">
               <li className="mr-6">
                 <a

@@ -6,14 +6,9 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-
-    <div className="dark">
-    <Testbar/>
-
-    </div>
-    
-      {/* <Navbar /> */}
-      <section className=" bg-[#000229]">
+    {/* <Testbar/> */}
+      <Navbar />
+      <section className="bg-[#000229] z-0">
         <Component {...pageProps} />
       </section>
       <Footer />
