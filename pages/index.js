@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <section id="Home">
-          <div className="lg:mb-20 lg:flex justify-between object-scale-down">
+          <div className=" pt-[5rem] lg:mb-20 lg:flex justify-between object-scale-down">
             {/* 左區 */}
             <div className="lg:ml-20">
               <div className="lg:mt-40 ">
