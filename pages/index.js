@@ -157,7 +157,7 @@ export default function Home() {
         <div className="hidden lg:block h-[200px]" />
 
         <section id="Core features">
-          <div className="lg:flex text-white">
+          <div className="lg:flex justify-around text-white">
             {/* 左 */}
             <div>
               <div className="text-[40px] font-semibold leading-tight">
