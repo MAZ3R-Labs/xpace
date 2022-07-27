@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -104,7 +105,7 @@ export default function Home() {
         </section>
         <section id="about">
           <div className="lg:flex justify-between font-[Montserrat]">
-            <div className="text-white text-[40px] mt-10 lg:ml-20">
+            <div className="text-white text-[40px] mt-10 lg:ml-20 font-semibold leading-tight">
               <p>ABOUT</p>
               <p>VISION</p>
             </div>
@@ -153,13 +154,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[200px]"/>
+        <div className="hidden lg:block h-[200px]" />
 
         <section id="Core features">
-          <div className="lg:flex justify-around text-white">
+          <div className="lg:flex text-white">
             {/* 左 */}
             <div>
-              <div className="text-[40px]">
+              <div className="text-[40px] font-semibold leading-tight">
                 <p>CORE</p>
                 <p>FEATURES</p>
               </div>
@@ -237,7 +238,7 @@ export default function Home() {
                   </div>
                   <div className="ml-8">
                     <p className="text-2xl mb-4">Surf to earn & Rent to earn</p>
-                    <p>Surf to earn from advertisement slots and  </p>
+                    <p>Surf to earn from advertisement slots and </p>
                     <p>the data you delegate (recorded on-chain) to </p>
                     <p>XPACE. Rent advertisement slots in your </p>
                     <p>space directly to advertisers.</p>
@@ -267,8 +268,129 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[200px]"/>
+        <div className="hidden lg:block h-[200px]" />
+        <section id="Tokenomics" className="font-[Montserrat]">
+          <div className="text-white lg:flex">
+            <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
+              <p>Token-</p>
+              <p>omics</p>
+            </div>
+            <div>
+              <div className="flex text-base">
+                <p className=" mr-[60px]">TOKEN SYMBOL</p>
+                <p className=" mr-[60px]">INITIAL CIRCULATION</p>
+                <p>INITIAL PUBLIC SALE PRICE</p>
+              </div>
+              <div className="flex text-2xl font-bold mt-7">
+                <p className="mr-[140px]">XPA</p>
+                <p className="mr-[94px]">50,000,000</p>
+                <p>$0.1</p>
+              </div>
+              <div className="flex mt-[133px]">
+                {/* 左區 */}
+                <div className=" basis-[380px] mr-14">
+                  <p className="text-[#626DFF] text-xl leading-5 font-semibold">
+                    TOKEN <br /> ALLOCATION
+                  </p>
+                  <div className=" mt-14 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">55%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BDD7] to-white" />
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Ecosystem&Foundation
+                      </p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
 
+                  <div className=" mt-12 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">5%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#4D11FA] to-white" />
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Team&Advisors
+                      </p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+
+                  <div className=" mt-12 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">5%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#FA5711] to-white" />
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Liquidity
+                      </p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 右區 */}
+                <div className=" basis-[280px]">
+                  <div className=" mt-1 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">5%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#FFC700] to-white" />
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Private Sale
+                      </p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+                  <div className=" mt-12 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">5%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BC35] to-white"/>
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">Public Sale</p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+                  <div className=" mt-12 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">10%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white"/>
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">Send Round</p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+                  <div className=" mt-12 flex">
+                    <div className="mr-6">
+                      <p className="text-2xl font-semibold leading-5">15%</p>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#FF34DF] to-white"/>
+                    </div>
+                    <div>
+                      <p className=" text-lg leading-5 font-semibold">Founding Team</p>
+                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                    </div>
+                  </div>
+                </div>
+                {/* 圓餅圖 */}
+                <div className=" w-[400px] hidden lg:block">
+                  <Image src="/Token_allo.svg" width={347} height={347} />
+                </div>
+              </div>
+              <div className="block lg:hidden">
+                  <Image src="/Token_allo.svg" width={347} height={347} />
+                </div>
+            </div>
+          </div>
+        </section>
+        <section id="Roadmap">
+
+        </section>
       </main>
     </div>
   );
