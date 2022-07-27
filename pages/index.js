@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <section id="Home">
-          <div className=" lg:mb-20 lg:flex justify-between object-scale-down">
+          <div className="lg:mb-20 lg:flex justify-between object-scale-down">
             {/* 左區 */}
             <div className="lg:ml-20">
               <div className="lg:mt-40 ">
@@ -259,7 +259,7 @@ export default function Home() {
                   </div>
                   <div className="ml-8">
                     <p className="text-2xl mb-4">Unique Algorithms</p>
-                    <p>XPACE's unique algorithms make your profit</p>
+                    <p>XPACE&apos;s unique algorithms make your profit</p>
                     <p>performance better.</p>
                   </div>
                 </div>
