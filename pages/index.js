@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -349,30 +349,36 @@ export default function Home() {
                   <div className=" mt-12 flex">
                     <div className="mr-6">
                       <p className="text-2xl font-semibold leading-5">5%</p>
-                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BC35] to-white"/>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BC35] to-white" />
                     </div>
                     <div>
-                      <p className=" text-lg leading-5 font-semibold">Public Sale</p>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Public Sale
+                      </p>
                       <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                   <div className=" mt-12 flex">
                     <div className="mr-6">
                       <p className="text-2xl font-semibold leading-5">10%</p>
-                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white"/>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white" />
                     </div>
                     <div>
-                      <p className=" text-lg leading-5 font-semibold">Send Round</p>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Send Round
+                      </p>
                       <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                   <div className=" mt-12 flex">
                     <div className="mr-6">
                       <p className="text-2xl font-semibold leading-5">15%</p>
-                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#FF34DF] to-white"/>
+                      <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#FF34DF] to-white" />
                     </div>
                     <div>
-                      <p className=" text-lg leading-5 font-semibold">Founding Team</p>
+                      <p className=" text-lg leading-5 font-semibold">
+                        Founding Team
+                      </p>
                       <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
@@ -383,13 +389,54 @@ export default function Home() {
                 </div>
               </div>
               <div className="block lg:hidden">
-                  <Image src="/Token_allo.svg" width={347} height={347} />
-                </div>
+                <Image src="/Token_allo.svg" width={347} height={347} />
+              </div>
             </div>
           </div>
         </section>
+        <div className="hidden lg:block h-[565px]" />
         <section id="Roadmap">
+          <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
+            <p>ROADMAP</p>
+          </div>
 
+          <div className="w-full flex p-[36px] justify-center items-start  mt-[100px]">
+
+            <div className=" w-[485px] font-noraml text-sm mt-16 text-end">
+              <h6 className=" text-4xl font-medium leading-9 font-[Montserrat] mt-5">2022 Q4</h6>
+              「Year… 2222, Location… InVaria, Weather… Radiation Fog and
+              Cold」Something is happening in this world…
+              <br /> <br />
+              Build up communication channel… Discord set up… Twitter launched…
+              Now we can communicate, discuss with each others about InVaria and
+              the ideas we have there!
+            </div>
+            {/* 時間軸 */}
+            <div className="flex flex-col items-center justify-center mr-6">
+              <div className="h-[100px] w-[1px] bg-[#626DFF] z-0" />
+              <span className="flex h-3 w-3 justify-center items-center">
+                <span className="animate-pulse absolute inline-flex h-3 w-3 rounded-full bg-white "></span>
+              </span>
+              <div className="static h-[880px] w-[1px] bg-[#565DFF] bg-opacity-60 z-0">
+        
+                <span className=" flex justify-start mt-10 h-2 w-2 rounded-full bg-[#0fda45] "></span>
+                <span className=" flex justify-start mt-20 h-2 w-2 rounded-full bg-[#0fda45] "></span>
+                <span className=" flex justify-start mt-40 h-2 w-2 rounded-full bg-[#0fda45] "></span>
+     
+              </div>
+
+            </div>
+
+            {/* 右區 */}
+            <div className=" w-[485px] font-noraml text-sm">
+              「Year… 2222, Location… InVaria, Weather… Radiation Fog and
+              Cold」Something is happening in this world…
+              <br /> <br />
+              Build up communication channel… Discord set up… Twitter launched…
+              Now we can communicate, discuss with each others about InVaria and
+              the ideas we have there!
+            </div>
+          </div>
         </section>
       </main>
     </div>
