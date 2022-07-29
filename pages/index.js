@@ -402,7 +402,7 @@ export default function Home() {
 
           <div className="flex justify-center mt-[100px]">
             {/* 左區 */}
-            <div className="relative text-end text-white mr-[100px]">
+            <div className=" w-[450px] relative text-end text-white mr-[100px]">
               {/* 2022Q4 */}
               <div className="absolute right-0 font-noraml mt-16 mr-auto ">
                 <div className="md:w-[360px] md:h-[68px] bg-[#626DFF] ">
@@ -465,7 +465,7 @@ export default function Home() {
             </div>
 
             {/* 右區 */}
-            <div className=" w-[485px] font-noraml text-white mt-[205px] ml-[100px]">
+            <div className=" w-[450px] font-noraml text-white mt-[205px] ml-[100px]">
               {/* 2023 Q1 */}
               <div>
                 <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
@@ -500,12 +500,81 @@ export default function Home() {
                   2024 Q1
                 </h6>
                 <h6 className=" text-sm font-[Montserrat] pt-8">
-                Add skins and weapons
+                  Add skins and weapons
                 </h6>
               </div>
             </div>
           </div>
         </section>
+        <div className="hidden lg:block h-[160px]" />
+        <section id="Team">
+          <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
+            <p>TEAM & ADVISORS</p>
+          </div>
+          <div className="flex justify-center text-white">
+            <div className="h-[370px] mr-3 items-center">
+              <Image src="/profile_pic.png" width={270} height={270} />
+              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                <h1 className="pl-4 pt-6">MARC C.</h1>
+                <h1 className="pl-4 mt-3 text-lg leading-5">CEO</h1>
+              </div>
+            </div>
+            <div className="mr-3">
+              <Image src="/profile_pic.png" width={270} height={270} />
+              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                <h1 className="pl-4 pt-6">ASIER P.</h1>
+                <h1 className="pl-4 mt-3 text-lg leading-5">CTO</h1>
+              </div>
+            </div>
+            <div className="mr-3">
+              <Image src="/profile_pic.png" width={270} height={270} />
+              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                <h1 className="pl-4 pt-6">PATXI B.</h1>
+                <h1 className="pl-4 mt-3 text-lg leading-5">CMO</h1>
+              </div>
+            </div>
+            <div className="mr-3">
+              <Image src="/profile_pic.png" width={270} height={270} />
+              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                <h1 className="pl-4 pt-6">XAVI P.</h1>
+                <h1 className="pl-4 mt-3 text-lg leading-5">Production</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="hidden lg:block h-[160px]" />
+        <section id="partner">
+          <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
+            <p>OUR PARTNERS</p>
+          </div>
+          <div className="flex justify-center mt-20">
+            <div className="mr-6">
+              <Image src="/partner/VC1.png" width={160} height={60} />
+            </div>
+            <div className="mr-6">
+              <Image src="/partner/VC2.png" width={160} height={60} />
+            </div>
+            <div className="mr-6">
+              <Image src="/partner/VC3.png" width={160} height={60} />
+            </div>
+            <div className="mr-6">
+              <Image src="/partner/VC4.png" width={160} height={60} />
+            </div>
+            <div className="mr-6">
+              <Image src="/partner/VC5.png" width={160} height={60} />
+            </div>
+          </div>
+        </section>
+        <div className="hidden lg:block h-[160px]" />
+        <section id="join">
+          <div className="flex flex-col items-center text-white">
+            <h1 className=" text-[32px] leading-10 font-medium font-[Zero G Wide] text-center">JOIN THE FUTURE <br/> COMMUNITY</h1>
+            <h1 className=" text-2xl leading-[48px] font-medium font-[Montserrat] mt-6">To meet many fun and smart people</h1>
+            <button className={styles.follow}>Follow US </button>
+            <h1 className="mt-8 font-medium">Get notified about important xpace updates</h1>
+          </div>
+        </section>
+        <div className="hidden lg:block h-[110px]" />
       </main>
     </div>
   );

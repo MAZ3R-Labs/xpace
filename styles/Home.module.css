@@ -34,3 +34,11 @@ border: 0.5px solid rgba(255, 255, 255, 0.7);
     background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 33.95%, #3834FF 64.91%, #FA118E 100%);
     @apply mb-10 mt-32;
   }
+
+  .follow {
+    @apply inline-block px-[60px] py-3 leading-none text-base text-white hover:text-teal-500 hover:bg-white mt-2 lg:mt-20 font-[Montserrat];
+    background: linear-gradient(96.43deg, #05FFFF 0.92%, #79AFFF 33.95%, #4844FF 64.91%, #FA118E 100%);  
+  
+    border-radius: 4px;
+  
+    }

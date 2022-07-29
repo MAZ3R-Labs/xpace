@@ -9,37 +9,37 @@ const Footer = () => {
           <div className="self-center ">
             <ul className="flex">
               <li className="ml-16 ">
-                <Image src="/logo/Logo.svg" width={132} height={30} />
+                <Image src="/logo/Footer_logo.svg" width={30} height={30} />
+              </li>
+              <li className="ml-3 ">
+                <Image src="/logo/Footer_logo_word.svg" width={80} height={30} />
               </li>
             </ul>
           </div>
           <div className=" text-white flex justify-between self-center ">
-            <ul className="flex mr-16">
+            <ul className="flex mr-16 text-sm font-normal">
               <Link href="/">
-                <li className="mr-6">
-                  <a href="#" className=" hover:text-cyan-300">
+                <li className="mr-10 ">
+                  <a href="#" className=" flex hover:text-cyan-300">
                     Whitepaper
+                    <img src="/wpr_arrow.svg" className=" items-center"/>
                   </a>
+                  
                 </li>
               </Link>
               <Link href="/contact">
-                <li className="mr-6">
-                  <a className=" hover:text-cyan-300">合作洽談</a>
+                <li className="mr-10">
+                  <a className=" hover:text-cyan-300">BBS X-city</a>
                 </li>
               </Link>
               <Link href="/service">
-                <li className="mr-6">
-                  <a className=" hover:text-cyan-300">客服信箱</a>
-                </li>
-              </Link>
-              <Link href="/download-app">
-                <li className="mr-6">
-                  <a className=" hover:text-cyan-300">下載X-City</a>
+                <li className="mr-10">
+                  <a className=" hover:text-cyan-300">X-pet</a>
                 </li>
               </Link>
               <Link href="/about">
-                <li className="mr-6">
-                  <a className=" hover:text-cyan-300">認識更多 XPACE</a>
+                <li className="mr-10">
+                  <a className=" hover:text-cyan-300">XPA DAO</a>
                 </li>
               </Link>
             </ul>
