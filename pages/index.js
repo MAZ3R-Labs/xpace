@@ -394,47 +394,115 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[565px]" />
+        <div className="hidden lg:block h-[565px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div>
         <section id="Roadmap">
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>ROADMAP</p>
           </div>
 
-          <div className="w-full flex p-[36px] justify-center items-start  mt-[100px]">
-
-            <div className=" w-[485px] font-noraml text-sm mt-16 text-end">
-              <h6 className=" text-4xl font-medium leading-9 font-[Montserrat] mt-5">2022 Q4</h6>
-              「Year… 2222, Location… InVaria, Weather… Radiation Fog and
-              Cold」Something is happening in this world…
-              <br /> <br />
-              Build up communication channel… Discord set up… Twitter launched…
-              Now we can communicate, discuss with each others about InVaria and
-              the ideas we have there!
-            </div>
-            {/* 時間軸 */}
-            <div className="flex flex-col items-center justify-center mr-6">
-              <div className="h-[100px] w-[1px] bg-[#626DFF] z-0" />
-              <span className="flex h-3 w-3 justify-center items-center">
-                <span className="animate-pulse absolute inline-flex h-3 w-3 rounded-full bg-white "></span>
-              </span>
-              <div className="static h-[880px] w-[1px] bg-[#565DFF] bg-opacity-60 z-0">
-        
-                <span className=" flex justify-start mt-10 h-2 w-2 rounded-full bg-[#0fda45] "></span>
-                <span className=" flex justify-start mt-20 h-2 w-2 rounded-full bg-[#0fda45] "></span>
-                <span className=" flex justify-start mt-40 h-2 w-2 rounded-full bg-[#0fda45] "></span>
-     
+          <div className="flex justify-center mt-[100px]">
+            {/* 左區 */}
+            <div className="relative text-end text-white mr-[100px]">
+              {/* 2022Q4 */}
+              <div className="absolute right-0 font-noraml mt-16 mr-auto ">
+                <div className="md:w-[360px] md:h-[68px] bg-[#626DFF] ">
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4 mr-6">
+                    2022 Q4
+                  </h6>
+                </div>
+                <div className="md:w-[360px] md:h-[96px] bg-[#626DFF] bg-opacity-20 ">
+                  <h6 className=" text-sm font-[Montserrat] pt-4 mr-6">
+                    X-city alpha
+                    <br />
+                    First batch of citizens check-in
+                    <br />
+                    Launch xpace community
+                  </h6>
+                </div>
               </div>
+              {/* 2023 Q2 */}
+              <div className="font-noraml mt-[270px] mr-6">
+                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                  2023 Q2
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-8">
+                  Distribute the rest of the initial tokens x-pet plugin beta
+                  <br />
+                  Add bbs layer1 scenes for x-city
+                  <br />
+                  Add organizations scenes for x-city
+                </h6>
+              </div>
+              {/* 2023 Q4 */}
+              <div className="font-noraml mt-[115px] mr-6">
+                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                  2023 Q4
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-8">
+                  X-city alpha
+                  <br />
+                  First batch of citizens check-in
+                  <br />
+                  Launch xpace community
+                </h6>
+              </div>
+            </div>
 
+            {/* 時間軸 */}
+            <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
+              <div className="h-[100px] w-[1px] bg-[#626DFF] z-0" />
+              <span className="flex h-2 w-2 justify-center items-center">
+                <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
+              </span>
+
+              <div className="items-center h-[880px] w-[1px] bg-gradient-to-b from-[#565DFF]  bg-opacity-60 z-0">
+                <span className="absolute left-0 z-30 mt-[128px] h-1 w-1 rounded-full bg-white "></span>
+                <span className="absolute left-0 z-30 mt-[256px] h-1 w-1 rounded-full bg-white "></span>
+                <span className="absolute left-0 z-30 mt-[384px] h-1 w-1 rounded-full bg-white "></span>
+                <span className="absolute left-0 z-30 mt-[512px] h-1 w-1 rounded-full bg-white "></span>
+                <span className="absolute left-0 z-30 mt-[640px] h-1 w-1 rounded-full bg-white "></span>
+              </div>
             </div>
 
             {/* 右區 */}
-            <div className=" w-[485px] font-noraml text-sm">
-              「Year… 2222, Location… InVaria, Weather… Radiation Fog and
-              Cold」Something is happening in this world…
-              <br /> <br />
-              Build up communication channel… Discord set up… Twitter launched…
-              Now we can communicate, discuss with each others about InVaria and
-              the ideas we have there!
+            <div className=" w-[485px] font-noraml text-white mt-[205px] ml-[100px]">
+              {/* 2023 Q1 */}
+              <div>
+                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                  2023 Q1
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-8">
+                  Community and public sales
+                  <br />
+                  X-city browser version beta
+                  <br />
+                  X-city app version beta
+                  <br />
+                  X-city installation version beta <br />
+                  X-city sdk
+                </h6>
+              </div>
+              <div className="mt-[70px]">
+                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                  2023 Q3
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-8">
+                  X-Browser beta
+                  <br />
+                  Add BBS layer2 scenes for X-city
+                  <br />
+                  Add Rooms
+                </h6>
+              </div>
+
+              <div className="mt-[115px]">
+                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                  2024 Q1
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-8">
+                Add skins and weapons
+                </h6>
+              </div>
             </div>
           </div>
         </section>
