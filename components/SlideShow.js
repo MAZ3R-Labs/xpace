@@ -1,64 +1,47 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import styles from "./SlideShow.module.css";
 
 const Slideshow = () => {
-  const images = [
-    "https://picsum.photos/200",
-    "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-    "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-  ];
-
-  const slideImages = [
-    {
-      url: "https://picsum.photos/200",
-      caption: "Slide 1",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-      caption: "Slide 2",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      caption: "Slide 3",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      caption: "Slide 3",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      caption: "Slide 3",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-      caption: "Slide 3",
-    },
-  ];
-
-  const properties = {
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true,
-    pauseOnHover: true,
-    onChange: (oldIndex, newIndex) => {
-      console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-    },
-  };
-
   return (
-    <div className="w-[752px] h-[272px]">
-      <Slide {...properties}>
-        {slideImages.map((slideImage, index) => (
-          <div className={styles.each_slide_effect} key={index}>
-            <div style={{ backgroundImage: `url(${slideImage.url})` }}></div>
+    <div className="flex-col w-[752px]">
+        <div className="carousel w-full h-[268px]">
+          <div id="item1" className="carousel-item relative w-full">
+            <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#item4" className="btn btn-circle">❮</a> 
+            <a href="#item2" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="item2" className="carousel-item relative w-full">
+            <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#item1" className="btn btn-circle">❮</a> 
+            <a href="#item3" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="item3" className="carousel-item relative w-full">
+            <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#item2" className="btn btn-circle">❮</a> 
+            <a href="#item4" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="item4" className="carousel-item relative w-full">
+            <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#item3" className="btn btn-circle">❮</a> 
+            <a href="#item1" className="btn btn-circle">❯</a>
+            </div>
           </div>
-        ))}
-      </Slide>
+        </div> 
+        <div className="flex justify-center w-full py-2 gap-2 ">
+          <a href="#item1" className="btn btn-ghost btn-xs">1</a> 
+          <a href="#item2" className="btn btn-ghost btn-xs">2</a> 
+          <a href="#item3" className="btn btn-ghost btn-xs">3</a> 
+          <a href="#item4" className="btn btn-ghost btn-xs">4</a>
+        </div>
     </div>
+      
+
   );
 };
 

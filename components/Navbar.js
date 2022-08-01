@@ -26,21 +26,21 @@ const Navbar = () => {
                   </a>
                 </div>
               </Link>
-              <Link href="/explore">
+              <Link href="/x-city">
                 <div className="mr-10 self-center">
                   <a className="text-white hover:text-cyan-300 font-semibold">
                     BBS X-city
                   </a>
                 </div>
               </Link>
-              <Link href="/premium">
+              <Link href="/soon">
                 <div className="mr-10 self-center">
                   <a className="text-white hover:text-cyan-300 font-semibold">
                     X-pet
                   </a>
                 </div>
               </Link>
-              <Link href="/about">
+              <Link href="/soon">
                 <div className="mr-10 self-center">
                   <a className="text-white hover:text-cyan-300 font-semibold">
                     XPA-DAO
@@ -110,7 +110,7 @@ const Navbar = () => {
               Home
             </a>
           </Link>
-          <Link href="/explore">
+          <Link href="/x-city">
             <a
               className="font-semibold text-base mb-9"
               onClick={() => {
@@ -121,7 +121,7 @@ const Navbar = () => {
               BBS X-city
             </a>
           </Link>
-          <Link href="/premium">
+          <Link href="/soon">
             <a
               className="font-semibold text-base mb-9"
               onClick={() => {
@@ -132,7 +132,7 @@ const Navbar = () => {
               X-pet
             </a>
           </Link>
-          <Link href="/about">
+          <Link href="/soon">
             <a
               className="font-semibold text-base mb-9"
               onClick={() => {

@@ -568,7 +568,7 @@ export default function Home() {
         <div className="hidden lg:block h-[160px]" />
         <section id="join">
           <div className="flex flex-col items-center text-white">
-            <h1 className=" text-[32px] leading-10 font-medium font-[Zero G Wide] text-center">JOIN THE FUTURE <br/> COMMUNITY</h1>
+            <h1 className=" text-[32px] leading-10 font-thin font-[zero] text-center">JOIN THE FUTURE <br/> COMMUNITY</h1>
             <h1 className=" text-2xl leading-[48px] font-medium font-[Montserrat] mt-6">To meet many fun and smart people</h1>
             <button className={styles.follow}>Follow US </button>
             <h1 className="mt-8 font-medium">Get notified about important xpace updates</h1>
