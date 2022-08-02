@@ -3,6 +3,7 @@ import Highlights from "../components/Highlights";
 import Rainbow from "../components/Rainbow";
 import Recommend from "../components/Recommend";
 import Slideshow from "../components/SlideShow";
+import MySwiper from "../components/slide/MySwiper";
 import Topics from "../components/Topics";
 import styles from "../styles/Home.module.css";
 
@@ -15,12 +16,14 @@ export default function Home() {
         <link rel="icon" href="/icon.svg" />
       </Head>
       <main className=" pt-10 z-40">
+        
         <div className="flex justify-center ">
           {/* 左區 */}
           <div className="w-100% mr-12">
             {/* 幻燈片 */}
             <div className="h-96 ml-40">
-              <Slideshow />
+              {/* <Slideshow /> */}
+              <MySwiper />
             </div>
             <div className="ml-10">
               <Rainbow text="熱門話題  HOT！" />
