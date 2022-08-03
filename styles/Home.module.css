@@ -6,6 +6,14 @@
 
   }
 
+  .discover_m {
+    @apply inline-block px-3 py-3 leading-none text-white hover:text-teal-500 hover:bg-white font-[Montserrat];
+    background: linear-gradient(96.43deg, #05FFFF 0.92%, #79AFFF 33.95%, #4844FF 64.91%, #FA118E 100%);  
+  
+    border-radius: 4px;
+  
+    }
+
   .rainbow_box {
     width: 2px;
     height: 1550px;
@@ -25,14 +33,14 @@ border: 0.5px solid rgba(255, 255, 255, 0.7);
     width: 200px;
     height: 1px;
     background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 33.95%, #3834FF 64.91%, #FA118E 100%);
-    @apply mb-10;
+    @apply mb-10 hidden lg:block;
   }
 
   .about_bar_1{
     width: 200px;
     height: 1px;
     background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 33.95%, #3834FF 64.91%, #FA118E 100%);
-    @apply mb-10 mt-32;
+    @apply mb-10 mt-32 hidden lg:block;
   }
 
   .follow {
@@ -41,4 +49,18 @@ border: 0.5px solid rgba(255, 255, 255, 0.7);
   
     border-radius: 4px;
   
+    }
+
+    .about_bar_m{
+      width: 230px;
+      height: 1px;
+      background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 33.95%, #3834FF 64.91%, #FA118E 100%);
+      @apply block lg:hidden mt-2;
+    }
+
+    .about_bar_m1{
+      width: 210px;
+      height: 1px;
+      background: linear-gradient(96.43deg, #05FFFF 0.92%, #2C80FF 33.95%, #3834FF 64.91%, #FA118E 100%);
+      @apply block lg:hidden mt-2;
     }

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <Navbar/>
     
 
-      <section className="bg-[#000229] z-0 w-full pt-[3.75rem] md:pt-[5rem]">
+      <section className="bg-[#000229] pt-[3.75rem] md:pt-[5rem]">
         <Component {...pageProps} />
       </section>
       <Footer />
