@@ -17,7 +17,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className=" text-white flex justify-between self-center ">
-            <ul className="flex mr-16 text-sm font-normal">
+            <ul className="flex lg:mr-16 text-sm font-normal">
               <Link href="/">
                 <li className="mr-10 ">
                   <a href="#" className=" flex hover:text-cyan-300">
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className=" text-white flex justify-between self-center mt-5 ">
-            <ul className="flex mr-16">
+            <ul className="flex lg:mr-16">
               <li className="mr-6">
                 <a
                   href="https://twitter.com"

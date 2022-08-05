@@ -118,7 +118,7 @@ export default function Home() {
         <div className="block lg:hidden h-[100px]" />
         <section id="about">
           <div className="lg:flex justify-between font-[Montserrat]">
-            <div className="text-white text-[40px] mt-10 ml-6 lg:ml-20 font-semibold leading-tight">
+            <div className="text-white text-[40px] lg:mt-10 ml-6 lg:ml-20 font-semibold leading-tight">
               <p>ABOUT</p>
               <p>VISION</p>
             </div>
@@ -146,6 +146,7 @@ export default function Home() {
                       immutably and transparently.
                     </p>
                   </div>
+                  {/* mobile ver. */}
                   <div className="block lg:hidden bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
                     Being one part of the web 3.0 philosophy, Xpace dedicate to
                     realizing a data justice world. The enormous profits of data
@@ -176,6 +177,7 @@ export default function Home() {
                     </p>
                     <p>when you surf X-city.</p>
                   </div>
+                  {/* mobile ver. */}
                   <div className="block lg:hidden bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
                     Xpace wish you a brand new community experience, where you
                     can meet people who share the same interests as you and
@@ -301,7 +303,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[200px]" />
+        <div className="h-[100px] lg:h-[200px]" />
         <section id="Tokenomics" className="font-[Montserrat]">
           <div className="hidden text-white lg:flex">
             <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
@@ -310,7 +312,7 @@ export default function Home() {
                 <p>omics</p>
               </div>
             </div>
-
+            {/* desktop */}
             <div>
               <div className="flex text-base">
                 <p className=" mr-[60px]">TOKEN SYMBOL</p>
@@ -449,10 +451,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center text-start">
-              <p className="text-[#626DFF] text-xl leading-5 font-semibold">
+              <p className="mt-16 text-[#626DFF] text-xl leading-5 font-semibold">
                 TOKEN <br /> ALLOCATION
               </p>
-              <div className=" mt-14 ml-16 flex">
+              <div className=" mt-10 ml-16 flex">
                 <div className="mr-6">
                   <p className="text-2xl font-semibold leading-5">55%</p>
                   <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BDD7] to-white" />
@@ -535,18 +537,24 @@ export default function Home() {
                 </div>
               </div>
               <div className="block lg:hidden">
-                <Image src="/Token_allo.svg" width={347} height={347} layout="fixed" />
+                <Image
+                  src="/Token_allo.svg"
+                  width={347}
+                  height={347}
+                  layout="fixed"
+                />
               </div>
             </div>
           </div>
         </section>
         <div className="hidden lg:block h-[565px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div>
+        <div className="h-[100px] block lg:hidden" />
         <section id="Roadmap">
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>ROADMAP</p>
           </div>
 
-          <div className="flex justify-center mt-[100px]">
+          <div className="hidden lg:flex justify-center mt-[100px]">
             {/* 左區 */}
             <div className=" w-[450px] relative text-end text-white mr-[100px]">
               {/* 2022Q4 */}
@@ -585,11 +593,8 @@ export default function Home() {
                   2023 Q4
                 </h6>
                 <h6 className=" text-sm font-[Montserrat] pt-8">
-                  X-city alpha
-                  <br />
-                  First batch of citizens check-in
-                  <br />
-                  Launch xpace community
+                  Organize the first fair in x-city<br/>
+                  Launch xpa dao
                 </h6>
               </div>
             </div>
@@ -652,34 +657,138 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[160px]" />
+        {/* mobile roadmap */}
+        <div className="lg:hidden mt-10 flex flex-col items-center">
+          <div className="flex justify-around w-11/12">
+            {/* 時間軸 */}
+            <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
+              <div className="h-[30px] w-[1px] bg-[#626DFF] z-0" />
+              <span className="flex h-2 w-2 justify-center items-center">
+                <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
+              </span>
+              <div className="h-[120px] w-[1px] bg-[#626DFF] z-0" />
+
+              <div className="items-center h-[800px] w-[1px] bg-gradient-to-b from-[#565DFF]   z-0">
+                <span className="absolute left-0 z-30 mt-[20px] h-1 w-1 rounded-full bg-white/60 "></span>
+                <span className="absolute left-0 z-30 mt-[207px] h-1 w-1 rounded-full bg-white/60 "></span>
+                <span className="absolute left-0 z-30 mt-[376px] h-1 w-1 rounded-full bg-white/60 "></span>
+                <span className="absolute left-0 z-30 mt-[524px] h-1 w-1 rounded-full bg-white/60 "></span>
+                <span className="absolute left-0 z-30 mt-[653px] h-1 w-1 rounded-full bg-white/60 "></span>
+              </div>
+            </div>
+            <div className="text-white">
+              {/* 2022Q4 */}
+              <div>
+                <div className="w-[250px] mt-[5px] bg-[#626DFF] ">
+                  <h6 className="text-3xl font-medium leading-9 font-[Montserrat] py-2 mr-6">
+                    2022 Q4
+                  </h6>
+                </div>
+                <div className="w-[250px] bg-[#626DFF] bg-opacity-20 ">
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3 mr-6">
+                    X-city alpha
+                    <br />
+                    First batch of citizens check-in
+                    <br />
+                    Launch xpace community
+                  </h6>
+                </div>
+              </div>
+              {/* 2023 Q1 */}
+              <div>
+                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                  2023 Q1
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                  Community and public sales
+                  <br />
+                  X-city browser version beta
+                  <br />
+                  X-city app version beta
+                  <br />
+                  X-city installation version beta <br />
+                  X-city sdk
+                </h6>
+              </div>
+              {/* 2023 Q2 */}
+              <div>
+                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                  2023 Q2
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                  Distribute the rest of the initial tokens x-pet plugin beta
+                  <br />
+                  Add bbs layer1 scenes for x-city
+                  <br />
+                  Add organizations scenes for x-city
+                </h6>
+              </div>
+              {/* 2023 Q3 */}
+              <div>
+                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                  2023 Q3
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                  X-Browser beta
+                  <br />
+                  Add BBS layer2 scenes for X-city
+                  <br />
+                  Add Rooms
+                </h6>
+              </div>
+              {/* 2023 Q4 */}
+              <div>
+                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                  2023 Q4
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                  Organize the first fair in x-city<br/>
+                  Launch xpa dao
+                </h6>
+              </div>
+              {/* 2024 Q1 */}
+              <div>
+                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                  2024 Q1
+                </h6>
+                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                  Add skins and weapons
+                </h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div className="h-[60px] lg:h-[160px]" />
         <section id="Team">
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>TEAM & ADVISORS</p>
           </div>
-          <div className="flex justify-center text-white">
-            <div className="h-[370px] mr-3 items-center">
+          <div className="h-16 lg:h-[160px]" />
+          <div className="flex flex-col items-center lg:flex-row lg:items-baseline justify-center text-white">
+            <div className="mt-6 lg:mt-0 mr-3">
               <Image src="/profile_pic.png" width={270} height={270} />
               <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
                 <h1 className="pl-4 pt-6">MARC C.</h1>
                 <h1 className="pl-4 mt-3 text-lg leading-5">CEO</h1>
               </div>
             </div>
-            <div className="mr-3">
+            <div className="mt-6 lg:mt-0 mr-3">
               <Image src="/profile_pic.png" width={270} height={270} />
               <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
                 <h1 className="pl-4 pt-6">ASIER P.</h1>
                 <h1 className="pl-4 mt-3 text-lg leading-5">CTO</h1>
               </div>
             </div>
-            <div className="mr-3">
+            <div className="mt-6 lg:mt-0 mr-3">
               <Image src="/profile_pic.png" width={270} height={270} />
               <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
                 <h1 className="pl-4 pt-6">PATXI B.</h1>
                 <h1 className="pl-4 mt-3 text-lg leading-5">CMO</h1>
               </div>
             </div>
-            <div className="mr-3">
+            <div className="mt-6 lg:mt-0 mr-3">
               <Image src="/profile_pic.png" width={270} height={270} />
               <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
                 <h1 className="pl-4 pt-6">XAVI P.</h1>
@@ -688,12 +797,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[160px]" />
+        <div className="h-[100px] lg:h-[160px]" />
         <section id="partner">
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>OUR PARTNERS</p>
           </div>
-          <div className="flex justify-center mt-20">
+          <div className="hidden lg:flex justify-center mt-20">
             <div className="mr-6">
               <Image src="/partner/VC1.png" width={160} height={60} />
             </div>
@@ -710,23 +819,48 @@ export default function Home() {
               <Image src="/partner/VC5.png" width={160} height={60} />
             </div>
           </div>
+          {/* mobile */}
+          <div className="flex flex-col items-center lg:hidden mt-20">
+            <div className="flex w-11/12 justify-center">
+              <div className="mr-6">
+                <Image src="/partner/VC1.png" width={160} height={60} />
+              </div>
+              <div className="mr-6">
+                <Image src="/partner/VC2.png" width={160} height={60} />
+              </div>
+              <div>
+                <Image src="/partner/VC3.png" width={160} height={60} />
+              </div>
+            </div>
+            <div className="flex w-11/12 justify-center mt-10">
+              <div className="mr-6">
+                <Image src="/partner/VC4.png" width={160} height={60} />
+              </div>
+              <div>
+                <Image src="/partner/VC5.png" width={160} height={60} />
+              </div>
+            </div>
+            
+            
+          </div>
         </section>
-        <div className="hidden lg:block h-[160px]" />
+        <div className="h-[100px] lg:h-[160px]" />
         <section id="join">
           <div className="flex flex-col items-center text-white">
-            <h1 className=" text-[32px] leading-10 font-thin font-[zero] text-center">
+            <h1 className=" text-xl leading-8 lg:text-[32px] lg:leading-10 font-thin font-[zero] text-center">
               JOIN THE FUTURE <br /> COMMUNITY
             </h1>
-            <h1 className=" text-2xl leading-[48px] font-medium font-[Montserrat] mt-6">
+            <h1 className=" text-lg leading-[48px] font-medium font-[Montserrat] mt-6">
               To meet many fun and smart people
             </h1>
+            <div className="block h-[100px] lg:hidden" />
             <button className={styles.follow}>Follow US </button>
-            <h1 className="mt-8 font-medium">
+            <h1 className="mt-8 font-medium font-[Montserrat]">
               Get notified about important xpace updates
             </h1>
           </div>
         </section>
-        <div className="hidden lg:block h-[110px]" />
+        <div className="h-[110px]" />
       </main>
     </div>
   );
