@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import MySwiper from "../components/slide/MySwiper";
-import Planetslide from "../components/slide/planetslide";
-import Petslide from "../components/slide/petslide";
+import Planetslide from "../components/slide/Planetslide";
+import Petslide from "../components/slide/Petslide";
 import styles from "../styles/Home.module.css";
 
 const xcity = () => {
