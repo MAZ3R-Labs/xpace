@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex justify-between pt-10">
           <div className="self-center ">
             <ul className="flex">
-              <li className="ml-16 ">
+              <li className="ml-3 lg:ml-16 ">
                 <Image src="/logo/Footer_logo.svg" width={30} height={30} />
               </li>
               <li className="ml-3 ">
@@ -16,8 +16,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className=" text-white flex justify-between self-center ">
-            <ul className="flex lg:mr-16 text-sm font-normal">
+          <div className="hidden text-white sm:flex justify-between self-center ">
+            <ul className="flex mr-0 lg:mr-16 text-sm font-normal">
               <Link href="/">
                 <li className="mr-10 ">
                   <a href="#" className=" flex hover:text-cyan-300">
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="flex justify-between">
           <div className="self-top ">
             <ul className="flex">
-              <li className="ml-16 ">
+              <li className="ml-3 lg:ml-16 ">
                 <a className="text-sm text-white">
                   ©2022 Xpace.All rights reserved
                 </a>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className=" text-white flex justify-between self-center mt-5 ">
-            <ul className="flex lg:mr-16">
+            <ul className="flex mr-2 lg:mr-16">
               <li className="mr-6">
                 <a
                   href="https://twitter.com"

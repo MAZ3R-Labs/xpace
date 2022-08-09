@@ -659,7 +659,7 @@ export default function Home() {
         </section>
         {/* mobile roadmap */}
         <div className="lg:hidden mt-10 flex flex-col items-center">
-          <div className="flex justify-around w-11/12">
+          <div className="flex justify-between w-2/3">
             {/* 時間軸 */}
             <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
               <div className="h-[30px] w-[1px] bg-[#626DFF] z-0" />
@@ -716,7 +716,7 @@ export default function Home() {
                   2023 Q2
                 </h6>
                 <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  Distribute the rest of the initial tokens x-pet plugin beta
+                  Distribute the rest of the initial tokens <br/>x-pet plugin beta
                   <br />
                   Add bbs layer1 scenes for x-city
                   <br />
