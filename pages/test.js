@@ -1,7 +1,7 @@
 import React from 'react'
 import MySwiper from "../components/slide/MySwiper";
-import Petslide from '../components/slide/petslide';
-import Planetslide from '../components/slide/planetslide';
+import Petslide from '../components/slide/Petslide';
+import Planetslide from '../components/slide/Planetslide';
 const test = () => {
   return (
     <div>
