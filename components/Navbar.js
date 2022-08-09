@@ -65,7 +65,7 @@ const Navbar = () => {
               >
                 <img
                   className="h-[20px] w-[20px]"
-                  src="/logo/Discord.svg"
+                  src="/menu_close.png"
                   alt=""
                 />
               </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
               >
                 <img
                   className="h-[20px] w-[20px]"
-                  src="/logo/Telegram.svg"
+                  src="/menu_open.png"
                   alt=""
                 />
               </button>

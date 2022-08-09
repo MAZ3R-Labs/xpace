@@ -12,11 +12,11 @@ export default function Home() {
       </Head>
       <main>
         <section id="Home">
-          <div className="lg:mb-20 lg:flex justify-between object-scale-down">
+          <div className="lg:mb-20 lg:flex justify-between object-scale-down lg:bg-[url('/background/bg.svg')] bg-no-repeat bg-cover">
             {/* 左區 */}
             <div className="lg:ml-20">
               <div className="mt-10 lg:mt-40 ">
-                <div className="flex justify-center lg:hidden ">
+                <div className="flex justify-center animate-moving lg:hidden">
                   <Image
                     src="/Astronaut.png"
                     width={232}
@@ -24,8 +24,13 @@ export default function Home() {
                     layout="fixed"
                   />
                 </div>
-
+                <div className="hidden lg:block">
                 <img src="/surf_to_earn_banner.svg" />
+                </div>
+                <div className="flex justify-center lg:hidden">
+                <img src="/surf_to_earn_banner.svg" />
+                </div>
+               
               </div>
               <div className="flex justify-around lg:justify-start text-white font-bold font-[Montserrat] text-lg lg:text-xl mt-10">
                 <div className="flex lg:mr-14 items-center">
@@ -72,7 +77,7 @@ export default function Home() {
             </div>
 
             {/* 太空人 */}
-            <div>
+            <div className=" animate-moving">
               <img
                 src="Astronaut.png"
                 className="hidden lg:block max-w-full max-h-full -rotate-[3.78deg] "
@@ -115,195 +120,203 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <div className="block lg:hidden h-[100px]" />
-        <section id="about">
-          <div className="lg:flex justify-between font-[Montserrat]">
-            <div className="text-white text-[40px] lg:mt-10 ml-6 lg:ml-20 font-semibold leading-tight">
-              <p>ABOUT</p>
-              <p>VISION</p>
-            </div>
-            <div className="mt-10 lg:mt-0">
-              <div className={styles.about_bar}></div>
-              <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover bg-opacity-20">
-                <div className=" lg:mr-72 mb-5 pb-5">
-                  <p className="text-4xl ml-3 lg:ml-0 ">Data Justice</p>
-                  <div className={styles.about_bar_m}></div>
-                  <div className="hidden lg:block mt-5">
-                    <p>
+        {/*2nd Background div */}
+        <div className="lg:bg-[url('/background/bg1.svg')] bg-no-repeat bg-cover pb-[65px]">
+          <section id="about">
+            <div className="lg:flex justify-between font-[Montserrat]">
+              <div className="text-white text-[40px] lg:mt-10 ml-6 lg:ml-20 font-semibold leading-tight">
+                <p>ABOUT</p>
+                <p>VISION</p>
+              </div>
+              <div className="mt-10 lg:mt-0">
+                <div className={styles.about_bar}></div>
+                <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover bg-opacity-20">
+                  <div className=" lg:mr-72 mb-5 pb-5">
+                    <p className="text-4xl ml-3 lg:ml-0 ">Data Justice</p>
+                    <div className={styles.about_bar_m}></div>
+                    <div className="hidden lg:block mt-5">
+                      <p>
+                        Being one part of the web 3.0 philosophy, Xpace dedicate
+                        to realizing a data justice
+                      </p>
+                      <p>
+                        world. The enormous profits of data should belong to
+                        data generators, not media
+                      </p>
+                      <p>
+                        magnates. Data generators, our users, are the boss of
+                        their data. With blockchain
+                      </p>
+                      <p>
+                        technology, the logs of authorization are recorded
+                        immutably and transparently.
+                      </p>
+                    </div>
+                    {/* mobile ver. */}
+                    <div className="block lg:hidden bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
                       Being one part of the web 3.0 philosophy, Xpace dedicate
-                      to realizing a data justice
-                    </p>
-                    <p>
-                      world. The enormous profits of data should belong to data
-                      generators, not media
-                    </p>
-                    <p>
-                      magnates. Data generators, our users, are the boss of
-                      their data. With blockchain
-                    </p>
-                    <p>
-                      technology, the logs of authorization are recorded
-                      immutably and transparently.
-                    </p>
-                  </div>
-                  {/* mobile ver. */}
-                  <div className="block lg:hidden bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
-                    Being one part of the web 3.0 philosophy, Xpace dedicate to
-                    realizing a data justice world. The enormous profits of data
-                    should belong to data generators, not media magnates. Data
-                    generators, our users, are the boss of their data. With
-                    blockchain technology, the logs of authorization are
-                    recordedimmutably and transparently.
+                      to realizing a data justice world. The enormous profits of
+                      data should belong to data generators, not media magnates.
+                      Data generators, our users, are the boss of their data.
+                      With blockchain technology, the logs of authorization are
+                      recordedimmutably and transparently.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.about_bar_1}></div>
-              <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
-                <div className=" lg:mr-72 pb-5">
-                  <p className="text-4xl ml-3 lg:ml-0">Immersion</p>
-                  <div className={styles.about_bar_m1}></div>
-                  <div className="hidden lg:block mt-5">
-                    <p>
+                <div className={styles.about_bar_1}></div>
+                <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
+                  <div className=" lg:mr-72 pb-5">
+                    <p className="text-4xl ml-3 lg:ml-0">Immersion</p>
+                    <div className={styles.about_bar_m1}></div>
+                    <div className="hidden lg:block mt-5">
+                      <p>
+                        Xpace wish you a brand new community experience, where
+                        you can meet
+                      </p>
+                      <p>
+                        people who share the same interests as you and interact
+                        with them with
+                      </p>
+                      <p>
+                        exciting options. The immersive environments give you
+                        more inspiration
+                      </p>
+                      <p>when you surf X-city.</p>
+                    </div>
+                    {/* mobile ver. */}
+                    <div className="block lg:hidden bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
                       Xpace wish you a brand new community experience, where you
-                      can meet
-                    </p>
-                    <p>
-                      people who share the same interests as you and interact
-                      with them with
-                    </p>
-                    <p>
-                      exciting options. The immersive environments give you more
-                      inspiration
-                    </p>
-                    <p>when you surf X-city.</p>
-                  </div>
-                  {/* mobile ver. */}
-                  <div className="block lg:hidden bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
-                    Xpace wish you a brand new community experience, where you
-                    can meet people who share the same interests as you and
-                    interact with them with exciting options. The immersive
-                    environments give you more inspiration when you surf X-city.
+                      can meet people who share the same interests as you and
+                      interact with them with exciting options. The immersive
+                      environments give you more inspiration when you surf
+                      X-city.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <div className="h-[100px] lg:h-[200px]" />
+          </section>
+          <div className="h-[100px] lg:h-[200px]" />
 
-        <section id="Core features">
-          <div className="lg:flex justify-around text-white">
-            {/* 左 */}
-            <div className="ml-6 lg:ml-0">
-              <div className="text-[40px] font-semibold leading-tight">
-                <p>CORE</p>
-                <p>FEATURES</p>
-              </div>
-              <div className="mt-2 lg:mt-5">
-                <p>You can find fun social</p>
-                <p>experiences here and earn </p>
-                <p>real money.</p>
-              </div>
-            </div>
-
-            <div className="lg:flex mt-6 lg:mt-0">
-              {/* 中 */}
+          <section id="Core features">
+            <div className="lg:flex justify-around text-white">
+              {/* 左 */}
               <div className="ml-6 lg:ml-0">
-                <div className="flex justify-start">
-                  <div className="mt-6">
-                    <img src="/core_icon/m_1.svg" />
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">DAO Governance</p>
-                    <p>XPA DAO token holders can govern the </p>
-                    <p>X-city social platform by participating in </p>
-                    <p>on-chain governance.</p>
-                  </div>
+                <div className="text-[40px] font-semibold leading-tight">
+                  <p>CORE</p>
+                  <p>FEATURES</p>
                 </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/m_2.svg" />
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Spaces/communities DAO</p>
-                    <p>Users can deploy DAO tokens for their own</p>
-                    <p>spaces/communities, then set rules and </p>
-                    <p>manage them by their own DAO token.</p>
-                  </div>
-                </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/m_3.svg" />
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Treasury</p>
-                    <p>The XPACE owns an on-chain pot of funds </p>
-                    <p>for the promotion and development of the </p>
-                    <p>ecosystem.</p>
-                  </div>
-                </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/m_4.svg" />
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">NFTs</p>
-                    <p>Turn your creations and spaces on XPACE </p>
-                    <p>into NFTs, and rent or sell them to others.</p>
-                  </div>
+                <div className="mt-2 lg:mt-5">
+                  <p>You can find fun social</p>
+                  <p>experiences here and earn </p>
+                  <p>real money.</p>
                 </div>
               </div>
 
-              {/* 右 */}
-              <div className="mt-20 ml-6 lg:mt-0 lg:ml-16">
-                <div className="flex justify-start">
-                  <div className="mt-6">
-                    <img src="/core_icon/r_1.svg" />
+              <div className="lg:flex mt-6 lg:mt-0">
+                {/* 中 */}
+                <div className="ml-6 lg:ml-0">
+                  <div className="flex justify-start">
+                    <div className="mt-6">
+                      <img src="/core_icon/m_1.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">DAO Governance</p>
+                      <p>XPA DAO token holders can govern the </p>
+                      <p>X-city social platform by participating in </p>
+                      <p>on-chain governance.</p>
+                    </div>
                   </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Fun & Convenient</p>
-                    <p>High personalized friends recommendation, </p>
-                    <p>fun and convenient experience in </p>
-                    <p>communication.</p>
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/m_2.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">Spaces/communities DAO</p>
+                      <p>Users can deploy DAO tokens for their own</p>
+                      <p>spaces/communities, then set rules and </p>
+                      <p>manage them by their own DAO token.</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/m_3.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">Treasury</p>
+                      <p>The XPACE owns an on-chain pot of funds </p>
+                      <p>for the promotion and development of the </p>
+                      <p>ecosystem.</p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/m_4.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">NFTs</p>
+                      <p>Turn your creations and spaces on XPACE </p>
+                      <p>into NFTs, and rent or sell them to others.</p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/r_2.svg" />
+
+                {/* 右 */}
+                <div className="mt-20 ml-6 lg:mt-0 lg:ml-16">
+                  <div className="flex justify-start">
+                    <div className="mt-6">
+                      <img src="/core_icon/r_1.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">Fun & Convenient</p>
+                      <p>High personalized friends recommendation, </p>
+                      <p>fun and convenient experience in </p>
+                      <p>communication.</p>
+                    </div>
                   </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Surf to earn & Rent to earn</p>
-                    <p>Surf to earn from advertisement slots and </p>
-                    <p>the data you delegate (recorded on-chain) to </p>
-                    <p>XPACE. Rent advertisement slots in your </p>
-                    <p>space directly to advertisers.</p>
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/r_2.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">
+                        Surf to earn & Rent to earn
+                      </p>
+                      <p>Surf to earn from advertisement slots and </p>
+                      <p>the data you delegate (recorded on-chain) to </p>
+                      <p>XPACE. Rent advertisement slots in your </p>
+                      <p>space directly to advertisers.</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/r_3.svg" />
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/r_3.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">Expand your estates</p>
+                      <p>Create and expand your land and spaces in </p>
+                      <p>the X-city world.</p>
+                    </div>
                   </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Expand your estates</p>
-                    <p>Create and expand your land and spaces in </p>
-                    <p>the X-city world.</p>
-                  </div>
-                </div>
-                <div className="flex justify-start lg:mt-[120px] mt-20">
-                  <div className="mt-6">
-                    <img src="/core_icon/r_4.svg" />
-                  </div>
-                  <div className="ml-8">
-                    <p className="text-2xl mb-4">Unique Algorithms</p>
-                    <p>XPACE&apos;s unique algorithms make your profit</p>
-                    <p>performance better.</p>
+                  <div className="flex justify-start lg:mt-[120px] mt-20">
+                    <div className="mt-6">
+                      <img src="/core_icon/r_4.svg" />
+                    </div>
+                    <div className="ml-8">
+                      <p className="text-2xl mb-4">Unique Algorithms</p>
+                      <p>XPACE&apos;s unique algorithms make your profit</p>
+                      <p>performance better.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <div className="h-[100px] lg:h-[200px]" />
+          </section>
+          <div className="h-[100px] lg:h-[135px]" />
+          {/* 2nd background div end */}
+        </div>
         <section id="Tokenomics" className="font-[Montserrat]">
           <div className="hidden text-white lg:flex">
             <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
@@ -547,261 +560,268 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[565px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div>
-        <div className="h-[100px] block lg:hidden" />
-        <section id="Roadmap">
-          <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
-            <p>ROADMAP</p>
-          </div>
+        <div className="hidden lg:block h-[400px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div>
+        {/* 3rd background */}
+        <div className="lg:bg-[url('/background/bg3.svg')] bg-no-repeat bg-cover">
+          <div className="h-[100px]  lg:h-[160px]" />
+          <section id="Roadmap">
+            <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
+              <p>ROADMAP</p>
+            </div>
 
-          <div className="hidden lg:flex justify-center mt-[100px]">
-            {/* 左區 */}
-            <div className=" w-[450px] relative text-end text-white mr-[100px]">
-              {/* 2022Q4 */}
-              <div className="absolute right-0 font-noraml mt-16 mr-auto ">
-                <div className="md:w-[360px] md:h-[68px] bg-[#626DFF] ">
-                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4 mr-6">
-                    2022 Q4
+            <div className="hidden lg:flex justify-center mt-[100px]">
+              {/* 左區 */}
+              <div className=" w-[450px] relative text-end text-white mr-[100px]">
+                {/* 2022Q4 */}
+                <div className="absolute right-0 font-noraml mt-16 mr-auto ">
+                  <div className="md:w-[360px] md:h-[68px] bg-[#626DFF] ">
+                    <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4 mr-6">
+                      2022 Q4
+                    </h6>
+                  </div>
+                  <div className="md:w-[360px] md:h-[96px] bg-[#626DFF] bg-opacity-20 ">
+                    <h6 className=" text-sm font-[Montserrat] pt-4 mr-6">
+                      X-city alpha
+                      <br />
+                      First batch of citizens check-in
+                      <br />
+                      Launch xpace community
+                    </h6>
+                  </div>
+                </div>
+                {/* 2023 Q2 */}
+                <div className="font-noraml mt-[270px] mr-6">
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                    2023 Q2
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-8">
+                    Distribute the rest of the initial tokens x-pet plugin beta
+                    <br />
+                    Add bbs layer1 scenes for x-city
+                    <br />
+                    Add organizations scenes for x-city
                   </h6>
                 </div>
-                <div className="md:w-[360px] md:h-[96px] bg-[#626DFF] bg-opacity-20 ">
-                  <h6 className=" text-sm font-[Montserrat] pt-4 mr-6">
-                    X-city alpha
-                    <br />
-                    First batch of citizens check-in
-                    <br />
-                    Launch xpace community
+                {/* 2023 Q4 */}
+                <div className="font-noraml mt-[115px] mr-6">
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                    2023 Q4
                   </h6>
-                </div>
-              </div>
-              {/* 2023 Q2 */}
-              <div className="font-noraml mt-[270px] mr-6">
-                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
-                  2023 Q2
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-8">
-                  Distribute the rest of the initial tokens x-pet plugin beta
-                  <br />
-                  Add bbs layer1 scenes for x-city
-                  <br />
-                  Add organizations scenes for x-city
-                </h6>
-              </div>
-              {/* 2023 Q4 */}
-              <div className="font-noraml mt-[115px] mr-6">
-                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
-                  2023 Q4
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-8">
-                  Organize the first fair in x-city<br/>
-                  Launch xpa dao
-                </h6>
-              </div>
-            </div>
-
-            {/* 時間軸 */}
-            <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
-              <div className="h-[100px] w-[1px] bg-[#626DFF] z-0" />
-              <span className="flex h-2 w-2 justify-center items-center">
-                <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
-              </span>
-
-              <div className="items-center h-[880px] w-[1px] bg-gradient-to-b from-[#565DFF]  bg-opacity-60 z-0">
-                <span className="absolute left-0 z-30 mt-[128px] h-1 w-1 rounded-full bg-white "></span>
-                <span className="absolute left-0 z-30 mt-[256px] h-1 w-1 rounded-full bg-white "></span>
-                <span className="absolute left-0 z-30 mt-[384px] h-1 w-1 rounded-full bg-white "></span>
-                <span className="absolute left-0 z-30 mt-[512px] h-1 w-1 rounded-full bg-white "></span>
-                <span className="absolute left-0 z-30 mt-[640px] h-1 w-1 rounded-full bg-white "></span>
-              </div>
-            </div>
-
-            {/* 右區 */}
-            <div className=" w-[450px] font-noraml text-white mt-[205px] ml-[100px]">
-              {/* 2023 Q1 */}
-              <div>
-                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
-                  2023 Q1
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-8">
-                  Community and public sales
-                  <br />
-                  X-city browser version beta
-                  <br />
-                  X-city app version beta
-                  <br />
-                  X-city installation version beta <br />
-                  X-city sdk
-                </h6>
-              </div>
-              <div className="mt-[70px]">
-                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
-                  2023 Q3
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-8">
-                  X-Browser beta
-                  <br />
-                  Add BBS layer2 scenes for X-city
-                  <br />
-                  Add Rooms
-                </h6>
-              </div>
-
-              <div className="mt-[115px]">
-                <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
-                  2024 Q1
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-8">
-                  Add skins and weapons
-                </h6>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* mobile roadmap */}
-        <div className="lg:hidden mt-10 flex flex-col items-center">
-          <div className="flex justify-between w-2/3">
-            {/* 時間軸 */}
-            <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
-              <div className="h-[30px] w-[1px] bg-[#626DFF] z-0" />
-              <span className="flex h-2 w-2 justify-center items-center">
-                <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
-              </span>
-              <div className="h-[120px] w-[1px] bg-[#626DFF] z-0" />
-
-              <div className="items-center h-[800px] w-[1px] bg-gradient-to-b from-[#565DFF]   z-0">
-                <span className="absolute left-0 z-30 mt-[20px] h-1 w-1 rounded-full bg-white/60 "></span>
-                <span className="absolute left-0 z-30 mt-[207px] h-1 w-1 rounded-full bg-white/60 "></span>
-                <span className="absolute left-0 z-30 mt-[376px] h-1 w-1 rounded-full bg-white/60 "></span>
-                <span className="absolute left-0 z-30 mt-[524px] h-1 w-1 rounded-full bg-white/60 "></span>
-                <span className="absolute left-0 z-30 mt-[653px] h-1 w-1 rounded-full bg-white/60 "></span>
-              </div>
-            </div>
-            <div className="text-white">
-              {/* 2022Q4 */}
-              <div>
-                <div className="w-[250px] mt-[5px] bg-[#626DFF] ">
-                  <h6 className="text-3xl font-medium leading-9 font-[Montserrat] py-2 mr-6">
-                    2022 Q4
-                  </h6>
-                </div>
-                <div className="w-[250px] bg-[#626DFF] bg-opacity-20 ">
-                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3 mr-6">
-                    X-city alpha
+                  <h6 className=" text-sm font-[Montserrat] pt-8">
+                    Organize the first fair in x-city
                     <br />
-                    First batch of citizens check-in
-                    <br />
-                    Launch xpace community
+                    Launch xpa dao
                   </h6>
                 </div>
               </div>
-              {/* 2023 Q1 */}
-              <div>
-                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
-                  2023 Q1
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  Community and public sales
-                  <br />
-                  X-city browser version beta
-                  <br />
-                  X-city app version beta
-                  <br />
-                  X-city installation version beta <br />
-                  X-city sdk
-                </h6>
-              </div>
-              {/* 2023 Q2 */}
-              <div>
-                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
-                  2023 Q2
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  Distribute the rest of the initial tokens <br/>x-pet plugin beta
-                  <br />
-                  Add bbs layer1 scenes for x-city
-                  <br />
-                  Add organizations scenes for x-city
-                </h6>
-              </div>
-              {/* 2023 Q3 */}
-              <div>
-                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
-                  2023 Q3
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  X-Browser beta
-                  <br />
-                  Add BBS layer2 scenes for X-city
-                  <br />
-                  Add Rooms
-                </h6>
-              </div>
-              {/* 2023 Q4 */}
-              <div>
-                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
-                  2023 Q4
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  Organize the first fair in x-city<br/>
-                  Launch xpa dao
-                </h6>
-              </div>
-              {/* 2024 Q1 */}
-              <div>
-                <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
-                  2024 Q1
-                </h6>
-                <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                  Add skins and weapons
-                </h6>
+
+              {/* 時間軸 */}
+              <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
+                <div className="h-[100px] w-[1px] bg-[#626DFF] z-0" />
+                <span className="flex h-2 w-2 justify-center items-center">
+                  <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
+                </span>
+
+                <div className="items-center h-[880px] w-[1px] bg-gradient-to-b from-[#565DFF]  bg-opacity-60 z-0">
+                  <span className="absolute left-0 z-30 mt-[128px] h-1 w-1 rounded-full bg-white "></span>
+                  <span className="absolute left-0 z-30 mt-[256px] h-1 w-1 rounded-full bg-white "></span>
+                  <span className="absolute left-0 z-30 mt-[384px] h-1 w-1 rounded-full bg-white "></span>
+                  <span className="absolute left-0 z-30 mt-[512px] h-1 w-1 rounded-full bg-white "></span>
+                  <span className="absolute left-0 z-30 mt-[640px] h-1 w-1 rounded-full bg-white "></span>
+                </div>
               </div>
 
-            </div>
-          </div>
-        </div>
+              {/* 右區 */}
+              <div className=" w-[450px] font-noraml text-white mt-[205px] ml-[100px]">
+                {/* 2023 Q1 */}
+                <div>
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                    2023 Q1
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-8">
+                    Community and public sales
+                    <br />
+                    X-city browser version beta
+                    <br />
+                    X-city app version beta
+                    <br />
+                    X-city installation version beta <br />
+                    X-city sdk
+                  </h6>
+                </div>
+                <div className="mt-[70px]">
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                    2023 Q3
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-8">
+                    X-Browser beta
+                    <br />
+                    Add BBS layer2 scenes for X-city
+                    <br />
+                    Add Rooms
+                  </h6>
+                </div>
 
-        <div className="h-[60px] lg:h-[160px]" />
-        <section id="Team">
-          <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
-            <p>TEAM & ADVISORS</p>
+                <div className="mt-[115px]">
+                  <h6 className="text-4xl font-medium leading-9 font-[Montserrat] pt-4">
+                    2024 Q1
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-8">
+                    Add skins and weapons
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* mobile roadmap */}
+          <div className="lg:hidden mt-10 flex flex-col items-center">
+            <div className="flex justify-between w-2/3">
+              {/* 時間軸 */}
+              <div className="relative flex flex-col w-[3px] items-center justify-center mr-6">
+                <div className="h-[30px] w-[1px] bg-[#626DFF] z-0" />
+                <span className="flex h-2 w-2 justify-center items-center">
+                  <span className="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-white "></span>
+                </span>
+                <div className="h-[120px] w-[1px] bg-[#626DFF] z-0" />
+
+                <div className="items-center h-[800px] w-[1px] bg-gradient-to-b from-[#565DFF]   z-0">
+                  <span className="absolute left-0 z-30 mt-[20px] h-1 w-1 rounded-full bg-white/60 "></span>
+                  <span className="absolute left-0 z-30 mt-[207px] h-1 w-1 rounded-full bg-white/60 "></span>
+                  <span className="absolute left-0 z-30 mt-[376px] h-1 w-1 rounded-full bg-white/60 "></span>
+                  <span className="absolute left-0 z-30 mt-[524px] h-1 w-1 rounded-full bg-white/60 "></span>
+                  <span className="absolute left-0 z-30 mt-[653px] h-1 w-1 rounded-full bg-white/60 "></span>
+                </div>
+              </div>
+              <div className="text-white">
+                {/* 2022Q4 */}
+                <div>
+                  <div className="w-[250px] mt-[5px] bg-[#626DFF] ">
+                    <h6 className="text-3xl font-medium leading-9 font-[Montserrat] py-2 mr-6">
+                      2022 Q4
+                    </h6>
+                  </div>
+                  <div className="w-[250px] bg-[#626DFF] bg-opacity-20 ">
+                    <h6 className=" text-sm font-[Montserrat] pt-2 pb-3 mr-6">
+                      X-city alpha
+                      <br />
+                      First batch of citizens check-in
+                      <br />
+                      Launch xpace community
+                    </h6>
+                  </div>
+                </div>
+                {/* 2023 Q1 */}
+                <div>
+                  <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                    2023 Q1
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                    Community and public sales
+                    <br />
+                    X-city browser version beta
+                    <br />
+                    X-city app version beta
+                    <br />
+                    X-city installation version beta <br />
+                    X-city sdk
+                  </h6>
+                </div>
+                {/* 2023 Q2 */}
+                <div>
+                  <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                    2023 Q2
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                    Distribute the rest of the initial tokens <br />
+                    x-pet plugin beta
+                    <br />
+                    Add bbs layer1 scenes for x-city
+                    <br />
+                    Add organizations scenes for x-city
+                  </h6>
+                </div>
+                {/* 2023 Q3 */}
+                <div>
+                  <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                    2023 Q3
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                    X-Browser beta
+                    <br />
+                    Add BBS layer2 scenes for X-city
+                    <br />
+                    Add Rooms
+                  </h6>
+                </div>
+                {/* 2023 Q4 */}
+                <div>
+                  <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                    2023 Q4
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                    Organize the first fair in x-city
+                    <br />
+                    Launch xpa dao
+                  </h6>
+                </div>
+                {/* 2024 Q1 */}
+                <div>
+                  <h6 className="mt-4 text-3xl font-medium leading-9 font-[Montserrat] py-2">
+                    2024 Q1
+                  </h6>
+                  <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
+                    Add skins and weapons
+                  </h6>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="h-16 lg:h-[160px]" />
-          <div className="flex flex-col items-center lg:flex-row lg:items-baseline justify-center text-white">
-            <div className="mt-6 lg:mt-0 mr-3">
-              <Image src="/profile_pic.png" width={270} height={270} />
-              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
-                <h1 className="pl-4 pt-6">MARC C.</h1>
-                <h1 className="pl-4 mt-3 text-lg leading-5">CEO</h1>
+
+          <div className="h-[60px] lg:h-[160px]" />
+          <section id="Team">
+            <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
+              <p>TEAM & ADVISORS</p>
+            </div>
+            <div className="h-16 lg:h-[160px]" />
+            <div className="flex flex-col items-center lg:flex-row lg:items-baseline justify-center text-white">
+              <div className="mt-6 lg:mt-0 mr-3">
+                <Image src="/profile_pic.png" width={270} height={270} />
+                <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                  <h1 className="pl-4 pt-6">MARC C.</h1>
+                  <h1 className="pl-4 mt-3 text-lg leading-5">CEO</h1>
+                </div>
+              </div>
+              <div className="mt-6 lg:mt-0 mr-3">
+                <Image src="/profile_pic.png" width={270} height={270} />
+                <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                  <h1 className="pl-4 pt-6">ASIER P.</h1>
+                  <h1 className="pl-4 mt-3 text-lg leading-5">CTO</h1>
+                </div>
+              </div>
+              <div className="mt-6 lg:mt-0 mr-3">
+                <Image src="/profile_pic.png" width={270} height={270} />
+                <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                  <h1 className="pl-4 pt-6">PATXI B.</h1>
+                  <h1 className="pl-4 mt-3 text-lg leading-5">CMO</h1>
+                </div>
+              </div>
+              <div className="mt-6 lg:mt-0 mr-3">
+                <Image src="/profile_pic.png" width={270} height={270} />
+                <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
+                  <h1 className="pl-4 pt-6">XAVI P.</h1>
+                  <h1 className="pl-4 mt-3 text-lg leading-5">Production</h1>
+                </div>
               </div>
             </div>
-            <div className="mt-6 lg:mt-0 mr-3">
-              <Image src="/profile_pic.png" width={270} height={270} />
-              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
-                <h1 className="pl-4 pt-6">ASIER P.</h1>
-                <h1 className="pl-4 mt-3 text-lg leading-5">CTO</h1>
-              </div>
-            </div>
-            <div className="mt-6 lg:mt-0 mr-3">
-              <Image src="/profile_pic.png" width={270} height={270} />
-              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
-                <h1 className="pl-4 pt-6">PATXI B.</h1>
-                <h1 className="pl-4 mt-3 text-lg leading-5">CMO</h1>
-              </div>
-            </div>
-            <div className="mt-6 lg:mt-0 mr-3">
-              <Image src="/profile_pic.png" width={270} height={270} />
-              <div className="-mt-2 h-[105px] bg-black text-2xl leading-5 font-bold">
-                <h1 className="pl-4 pt-6">XAVI P.</h1>
-                <h1 className="pl-4 mt-3 text-lg leading-5">Production</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div className="h-[100px] lg:h-[160px]" />
-        <section id="partner">
+          </section>
+          <div className="h-[100px] lg:h-[160px]" />
+
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>OUR PARTNERS</p>
           </div>
+          {/* 3rd bg end */}
+        </div>
+        <section id="partner">
           <div className="hidden lg:flex justify-center mt-20">
             <div className="mr-6">
               <Image src="/partner/VC1.png" width={160} height={60} />
@@ -840,13 +860,11 @@ export default function Home() {
                 <Image src="/partner/VC5.png" width={160} height={60} />
               </div>
             </div>
-            
-            
           </div>
         </section>
         <div className="h-[100px] lg:h-[160px]" />
         <section id="join">
-          <div className="flex flex-col items-center text-white">
+          <div className="flex flex-col items-center lg:bg-[url('/background/bg4.png')] bg-no-repeat bg-cover pb-[200px] w-full text-white">
             <h1 className=" text-xl leading-8 lg:text-[32px] lg:leading-10 font-thin font-[zero] text-center">
               JOIN THE FUTURE <br /> COMMUNITY
             </h1>
@@ -860,7 +878,6 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <div className="h-[110px]" />
       </main>
     </div>
   );

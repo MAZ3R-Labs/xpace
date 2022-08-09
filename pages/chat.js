@@ -23,7 +23,7 @@ export default function Home() {
             {/* 幻燈片 */}
             <div className="h-96 ml-40">
               {/* <Slideshow /> */}
-              <MySwiper />
+              {/* <MySwiper /> */}
             </div>
             <div className="ml-10">
               <Rainbow text="熱門話題  HOT！" />
