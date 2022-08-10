@@ -318,7 +318,7 @@ export default function Home() {
           {/* 2nd background div end */}
         </div>
         <section id="Tokenomics" className="font-[Montserrat]">
-          <div className="hidden text-white lg:flex">
+          <div className="hidden text-white lg:flex justify-around">
             <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
               <div className="hidden lg:block">
                 <p>Token-</p>

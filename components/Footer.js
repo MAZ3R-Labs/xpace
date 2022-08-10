@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="hidden text-white sm:flex justify-between self-center ">
             <ul className="flex mr-0 lg:mr-16 text-sm font-normal">
               <Link href="/">
-                <li className="mr-10 ">
+                <li className="mr-10 cursor-pointer">
                   <a href="#" className=" flex hover:text-cyan-300">
                     Whitepaper
                     <img src="/wpr_arrow.svg" className=" items-center"/>
@@ -28,17 +28,17 @@ const Footer = () => {
                 </li>
               </Link>
               <Link href="/contact">
-                <li className="mr-10">
+                <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">BBS X-city</a>
                 </li>
               </Link>
               <Link href="/service">
-                <li className="mr-10">
+                <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">X-pet</a>
                 </li>
               </Link>
               <Link href="/about">
-                <li className="mr-10">
+                <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">XPA DAO</a>
                 </li>
               </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
 
           <div className=" text-white flex justify-between self-center mt-5 ">
             <ul className="flex mr-2 lg:mr-16">
-              <li className="mr-6">
+              <li className="mr-6 cursor-pointer">
                 <a
                   href="https://twitter.com"
                   target="_blank"
@@ -70,7 +70,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="mr-6">
+              <li className="mr-6 cursor-pointer">
                 <a
                   href="https://www.discord.com/"
                   target="_blank"
@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="mr-6">
+              <li className="mr-6 cursor-pointer">
                 <a
                   href="https://mirror.xyz/"
                   target="_blank"
@@ -90,7 +90,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li className="mr-6">
+              <li className="mr-6 cursor-pointer">
                 <a
                   href="https://t.me/"
                   target="_blank"
