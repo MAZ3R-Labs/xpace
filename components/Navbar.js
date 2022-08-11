@@ -19,14 +19,14 @@ const Navbar = () => {
               </div>
             </Link>
             <div className="ml-48 hidden md:flex">
-              <Link href="/chat">
+              <Link href="/">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
                     Home
                   </a>
                 </div>
               </Link>
-              <Link href="/x-city">
+              <Link href="/soon">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
                     BBS X-city
@@ -99,7 +99,7 @@ const Navbar = () => {
       </nav>
       {toggleMenu && (
         <div className=" fixed top-[60px] left-0 z-30 w-screen h-screen py-[34px] px-[16px] flex flex-col justify-start items-end md:hidden text-white bg-black">
-          <Link href="/chat">
+          <Link href="/">
             <a
               className="font-semibold text-base mb-9 cursor-pointer"
               onClick={() => {
@@ -110,7 +110,7 @@ const Navbar = () => {
               Home
             </a>
           </Link>
-          <Link href="/x-city">
+          <Link href="/soon">
             <a
               className="font-semibold text-base mb-9 cursor-pointer"
               onClick={() => {

@@ -85,7 +85,7 @@ export default function Home() {
             </div>
 
             {/* 側邊欄 */}
-            <div className="hidden lg:flex mr-[75px] mt-72  ">
+            {/* <div className="hidden lg:flex mr-[75px] mt-72  ">
               <div className="text-whit mr-4">
                 <a
                   href="https://twitter.com"
@@ -117,7 +117,7 @@ export default function Home() {
                 </a>
               </div>
               <div className={styles.link_bar} />
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -560,7 +560,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="hidden lg:block h-[400px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div>
+        {/* <div className="hidden lg:block h-[400px] bg-[url('/BG.png')] bg-no-repeat bg-center bg-contain"></div> */}
         {/* 3rd background */}
         <div className="lg:bg-[url('/background/bg3.svg')] bg-no-repeat bg-cover">
           <div className="h-[100px]  lg:h-[160px]" />
@@ -778,7 +778,7 @@ export default function Home() {
           </div>
 
           <div className="h-[60px] lg:h-[160px]" />
-          <section id="Team">
+          {/* <section id="Team">
             <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
               <p>TEAM & ADVISORS</p>
             </div>
@@ -818,10 +818,10 @@ export default function Home() {
 
           <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
             <p>OUR PARTNERS</p>
-          </div>
+          </div> */}
           {/* 3rd bg end */}
         </div>
-        <section id="partner">
+        {/* <section id="partner">
           <div className="hidden lg:flex justify-center mt-20">
             <div className="mr-6">
               <Image src="/partner/VC1.png" width={160} height={60} />
@@ -838,9 +838,9 @@ export default function Home() {
             <div className="mr-6">
               <Image src="/partner/VC5.png" width={160} height={60} />
             </div>
-          </div>
+          </div> */}
           {/* mobile */}
-          <div className="flex flex-col items-center lg:hidden mt-20">
+          {/* <div className="flex flex-col items-center lg:hidden mt-20">
             <div className="flex w-11/12 justify-center">
               <div className="mr-6">
                 <Image src="/partner/VC1.png" width={160} height={60} />
@@ -861,7 +861,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <div className="h-[100px] lg:h-[160px]" />
         <section id="join">
           <div className="flex flex-col items-center lg:bg-[url('/background/bg4.png')] bg-no-repeat bg-cover pb-[200px] w-full text-white">

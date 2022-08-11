@@ -27,17 +27,17 @@ const Footer = () => {
                   
                 </li>
               </Link>
-              <Link href="/contact">
+              <Link href="/soon">
                 <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">BBS X-city</a>
                 </li>
               </Link>
-              <Link href="/service">
+              <Link href="/soon">
                 <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">X-pet</a>
                 </li>
               </Link>
-              <Link href="/about">
+              <Link href="/soon">
                 <li className="mr-10 cursor-pointer">
                   <a className=" hover:text-cyan-300">XPA DAO</a>
                 </li>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         {/* 第二行 */}
-        <div className="flex justify-between">
+        <div className="flex justify-start">
           <div className="self-top ">
             <ul className="flex">
               <li className="ml-3 lg:ml-16 ">
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className=" text-white flex justify-between self-center mt-5 ">
+          {/* <div className=" text-white flex justify-between self-center mt-5 ">
             <ul className="flex mr-2 lg:mr-16">
               <li className="mr-6 cursor-pointer">
                 <a
@@ -100,7 +100,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
