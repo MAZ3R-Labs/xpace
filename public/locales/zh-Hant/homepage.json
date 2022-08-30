@@ -1,11 +1,29 @@
 {
-  "joinWaitlist": "Join Waitlist",
-
   "main.slogan": "Grows Bitcoin safe & easy on the trustable investment platform",
 
-  "investmentIntro.title": "Invest Bitcoin in 3 Steps",
+  "vision.title": "我們的願景",
+  "vision.community.title": "提升社群緊密度",
+  "vision.community.description": "社群工具的整合與創新的對應式 3D 社群空間，提升成員間的緊密度、樂趣與便利性",
+  "vision.social.title": "共治式社群 / 社交即獲利",
+  "vision.social.description": "提供可選用的 DAO 智能合約工具以及不同形式的獲利方式，讓每一個社群成員都能體驗成為社群的核心參與者",
 
-  "partners.title": "Partners",
+  "features.title": "核心功能與特色",
+  "features.dao.title": "空間 / 社群 DAO",
+  "features.dao.description": "用戶可以為自己的社群佈屬 DAO 並透過該 DAO 進行社群治理",
+  "features.funAndConvenient.title": "樂趣 & 便利",
+  "features.funAndConvenient.description": "3D 互動空間、多人社群遊戲、個人/多人視訊直播討論版等社群工具讓您輕鬆開展豐富有趣的社交生活",
+  "features.dataController.title": "鏈上資料控制器",
+  "features.dataController.description": "用戶掌控資料授權程度與對象並享受資料分享利潤不再由社群平台所獨自霸佔",
+  "features.socialToEarn.title": "社交即獲利",
+  "features.socialToEarn.description": "各種用戶獲利機制讓您在社群平台上的每一分鐘都值得更多、享有更多",
+  "features.treasury.title": "Treasury",
+  "features.treasury.description": "鏈上資金池持續發展生態系茁壯社群環境與功能",
+  "features.expandEstates.title": "擴展虛擬土地",
+  "features.expandEstates.description": "創建並擴展您的虛擬土地儘速搶佔絕佳展示地理位置",
+  "features.nfts.title": "NFTs",
+  "features.nfts.description": "為您的社群創建 NFT 虛擬寶物 NFT 推展更多的 NFT 的社群功能",
+  "features.customerFirst.title": "用戶是我們的核心",
+  "features.customerFirst.description": "立志成為最重視用戶權益的社群平台 用戶的所有建議與感受，都是我們高度重視的對象",
 
-  "consultation.title": "Exclusive Consultation"
+  "tokenomics.title": "代幣經濟"
 }

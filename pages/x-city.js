@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React from "react";
 import MySwiper from "../components/slide/MySwiper";
 import Planetslide from "../components/slide/Planetslide";
@@ -237,3 +238,12 @@ const xcity = () => {
 };
 
 export default xcity;
+
+export const getStaticProps = async ({ locale = '' }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['xcity', 'menu', 'common'])),
+      // Will be passed to the page component as props
+    },
+  }
+}

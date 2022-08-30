@@ -1,11 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const soon = () => {
+  const { t } = useTranslation(['common']);
+
   return (
     <div className='flex justify-center items-center w-full h-screen'>
-        <p className='text-4xl text-white font-semibold'>coming soon</p>
+        <p className='text-4xl text-white font-semibold'>{t('comingSoon')}</p>
     </div>
   )
 }
 
 export default soon
+
+export const getStaticProps = async ({ locale = '' }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['menu', 'common'])),
+      // Will be passed to the page component as props
+    },
+  }
+}

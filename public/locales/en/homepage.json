@@ -1,0 +1,29 @@
+{
+  "main.slogan": "Grows Bitcoin safe & easy on the trustable investment platform",
+
+  "vision.title": "ABOUT VISION",
+  "vision.community.title": "Data Justice",
+  "vision.community.description": "Being one part of the web 3.0 philosophy, Xpace dedicate to realizing a data justice world. The enormous profits of data should belong to data generators, not media magnates. Data generators, our users, are the boss of their data. With blockchain technology, the logs of authorization are recorded immutably and transparently.",
+  "vision.social.title": "Immersion",
+  "vision.social.description": "Xpace wish you a brand new community experience, where you can meet people who share the same interests as you and interact with them with exciting options. The immersive environments give you more inspiration when you surf X-city.",
+
+  "features.title": "CORE FEATURES",
+  "features.dao.title": "DAO Governance",
+  "features.dao.description": "XPA DAO token holders can govern the X-city social platform by participating in on-chain governance.",
+  "features.funAndConvenient.title": "Fun & Convenient",
+  "features.funAndConvenient.description": "High personalized friends recommendation, fun and convenient experience in communication.",
+  "features.dataController.title": "Spaces/communities DAO",
+  "features.dataController.description": "Users can deploy DAO tokens for their own spaces/communities, then set rules and manage them by their own DAO token.",
+  "features.socialToEarn.title": "Surf to earn & Rent to earn",
+  "features.socialToEarn.description": "Surf to earn from advertisement slots and the data you delegate (recorded on-chain) to XPACE. Rent advertisement slots in your space directly to advertisers.",
+  "features.treasury.title": "Treasury",
+  "features.treasury.description": "The XPACE owns an on-chain pot of funds for the promotion and development of the ecosystem.",
+  "features.expandEstates.title": "Expand your estates",
+  "features.expandEstates.description": "Create and expand your land and spaces in the X-city world.",
+  "features.nfts.title": "NFTs",
+  "features.nfts.description": "Turn your creations and spaces on XPACE into NFTs, and rent or sell them to others.",
+  "features.customerFirst.title": "Unique Algorithms",
+  "features.customerFirst.description": "XPACE's unique algorithms make your profit performance better.",
+
+  "tokenomics.title": "Tokenomics"
+}

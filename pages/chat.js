@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Highlights from "../components/Highlights";
 import Rainbow from "../components/Rainbow";
 import Recommend from "../components/Recommend";
@@ -7,7 +8,7 @@ import MySwiper from "../components/slide/MySwiper";
 import Topics from "../components/Topics";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Chat() {
   return (
     <div>
       <Head>
@@ -71,4 +72,13 @@ export default function Home() {
       <div className="h-11"></div>
     </div>
   );
+}
+
+export const getStaticProps = async ({ locale = '' }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['chat', 'menu', 'common'])),
+      // Will be passed to the page component as props
+    },
+  }
 }

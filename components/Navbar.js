@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from 'next-i18next';
 import { disableScroll, enableScroll } from "./disableScroll";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation(['menu', 'common']);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -22,28 +24,28 @@ const Navbar = () => {
               <Link href="/">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
-                    Home
+                    {t('home')}
                   </a>
                 </div>
               </Link>
               <Link href="/soon">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
-                    BBS X-city
+                    {t('bbsXCity')}
                   </a>
                 </div>
               </Link>
               <Link href="/soon">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
-                    X-pet
+                    {t('xPet')}
                   </a>
                 </div>
               </Link>
               <Link href="/soon">
                 <div className="mr-10 self-center cursor-pointer">
                   <a className="text-white hover:text-cyan-300 font-semibold">
-                    XPA-DAO
+                    {t('xpaDao')}
                   </a>
                 </div>
               </Link>
@@ -107,7 +109,7 @@ const Navbar = () => {
                 enableScroll();
               }}
             >
-              Home
+              {t('home')}
             </a>
           </Link>
           <Link href="/soon">
@@ -118,7 +120,7 @@ const Navbar = () => {
                 enableScroll();
               }}
             >
-              BBS X-city
+              {t('bbsXCity')}
             </a>
           </Link>
           <Link href="/soon">
@@ -129,7 +131,7 @@ const Navbar = () => {
                 enableScroll();
               }}
             >
-              X-pet
+              {t('xPet')}
             </a>
           </Link>
           <Link href="/soon">
@@ -140,7 +142,7 @@ const Navbar = () => {
                 enableScroll();
               }}
             >
-              XPA-DAO
+              {t('xpaDao')}
             </a>
           </Link>
         </div>

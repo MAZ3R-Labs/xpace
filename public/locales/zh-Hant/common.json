@@ -1,11 +1,8 @@
 {
-  "brand.name": "Lucid Lake",
-  "title": "Lucid Lake",
-  "learnMore": "了解更多",
-  "login": "登入",
-  "register": "註冊",
+  "title": "Xpace",
+  "followUs": "追蹤我們",
+  "comingSoon": "敬請期待",
 
-  "example.email": "xxx@gmail.com",
-
-  "footer.slogan": "Made for Stacks Ӿ community with ❤️"
+  "footer.subSlogan": "遇見更多聰明風趣的社群和夥伴",
+  "footer.followUs.description": "立即預約成為早期測試版用戶，並開始累積您的航行哩程數並享受多項專屬好禮"
 }

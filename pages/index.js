@@ -1,12 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
+  const { t } = useTranslation(['homepage', 'common'])
+
   return (
     <div>
       <Head>
-        <title>Xpace</title>
+        <title>{t('title', { ns: 'common' })}</title>
         <meta name="description" content="Xpace" />
         <link rel="icon" href="/icon.svg" />
       </Head>
@@ -127,71 +131,38 @@ export default function Home() {
           <section id="about">
             <div className="lg:flex justify-between font-[Montserrat]">
               <div className="text-white text-[40px] lg:mt-10 ml-6 lg:ml-20 font-semibold leading-tight">
-                <p>ABOUT</p>
-                <p>VISION</p>
+                <p>{t('vision.title')}</p>
               </div>
               <div className="mt-10 lg:mt-0">
                 <div className={styles.about_bar}></div>
                 <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover bg-opacity-20">
                   <div className=" lg:mr-72 mb-5 pb-5">
-                    <p className="text-4xl ml-3 lg:ml-0 ">Data Justice</p>
+                    <p className="text-4xl ml-3 lg:ml-0 ">{t('vision.community.title')}</p>
                     <div className={styles.about_bar_m}></div>
                     <div className="hidden lg:block mt-5">
                       <p>
-                        Being one part of the web 3.0 philosophy, Xpace dedicate
-                        to realizing a data justice
-                      </p>
-                      <p>
-                        world. The enormous profits of data should belong to
-                        data generators, not media
-                      </p>
-                      <p>
-                        magnates. Data generators, our users, are the boss of
-                        their data. With blockchain
-                      </p>
-                      <p>
-                        technology, the logs of authorization are recorded
-                        immutably and transparently.
+                        {t('vision.community.description')}
                       </p>
                     </div>
                     {/* mobile ver. */}
                     <div className="block lg:hidden bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
-                      Being one part of the web 3.0 philosophy, Xpace dedicate
-                      to realizing a data justice world. The enormous profits of
-                      data should belong to data generators, not media magnates.
-                      Data generators, our users, are the boss of their data.
-                      With blockchain technology, the logs of authorization are
-                      recordedimmutably and transparently.
+                      {t('vision.community.description')}
                     </div>
                   </div>
                 </div>
                 <div className={styles.about_bar_1}></div>
                 <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
                   <div className=" lg:mr-72 pb-5">
-                    <p className="text-4xl ml-3 lg:ml-0">Immersion</p>
+                    <p className="text-4xl ml-3 lg:ml-0">{t('vision.social.title')}</p>
                     <div className={styles.about_bar_m1}></div>
                     <div className="hidden lg:block mt-5">
                       <p>
-                        Xpace wish you a brand new community experience, where
-                        you can meet
+                        {t('vision.social.description')}
                       </p>
-                      <p>
-                        people who share the same interests as you and interact
-                        with them with
-                      </p>
-                      <p>
-                        exciting options. The immersive environments give you
-                        more inspiration
-                      </p>
-                      <p>when you surf X-city.</p>
                     </div>
                     {/* mobile ver. */}
                     <div className="block lg:hidden bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
-                      Xpace wish you a brand new community experience, where you
-                      can meet people who share the same interests as you and
-                      interact with them with exciting options. The immersive
-                      environments give you more inspiration when you surf
-                      X-city.
+                      {t('vision.social.description')}
                     </div>
                   </div>
                 </div>
@@ -205,13 +176,7 @@ export default function Home() {
               {/* 左 */}
               <div className="ml-6 lg:ml-0">
                 <div className="text-[40px] font-semibold leading-tight">
-                  <p>CORE</p>
-                  <p>FEATURES</p>
-                </div>
-                <div className="mt-2 lg:mt-5">
-                  <p>You can find fun social</p>
-                  <p>experiences here and earn </p>
-                  <p>real money.</p>
+                  <p>{t('features.title')}</p>
                 </div>
               </div>
 
@@ -223,10 +188,8 @@ export default function Home() {
                       <img src="/core_icon/m_1.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">DAO Governance</p>
-                      <p>XPA DAO token holders can govern the </p>
-                      <p>X-city social platform by participating in </p>
-                      <p>on-chain governance.</p>
+                      <p className="text-2xl mb-4">{t('features.dao.title')}</p>
+                      <p>{t('features.dao.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -234,10 +197,8 @@ export default function Home() {
                       <img src="/core_icon/m_2.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Spaces/communities DAO</p>
-                      <p>Users can deploy DAO tokens for their own</p>
-                      <p>spaces/communities, then set rules and </p>
-                      <p>manage them by their own DAO token.</p>
+                      <p className="text-2xl mb-4">{t('features.dataController.title')}</p>
+                      <p>{t('features.dataController.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -245,10 +206,8 @@ export default function Home() {
                       <img src="/core_icon/m_3.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Treasury</p>
-                      <p>The XPACE owns an on-chain pot of funds </p>
-                      <p>for the promotion and development of the </p>
-                      <p>ecosystem.</p>
+                      <p className="text-2xl mb-4">{t('features.treasury.title')}</p>
+                      <p>{t('features.treasury.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -256,9 +215,8 @@ export default function Home() {
                       <img src="/core_icon/m_4.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">NFTs</p>
-                      <p>Turn your creations and spaces on XPACE </p>
-                      <p>into NFTs, and rent or sell them to others.</p>
+                      <p className="text-2xl mb-4">{t('features.nfts.title')}</p>
+                      <p>{t('features.nfts.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -270,10 +228,8 @@ export default function Home() {
                       <img src="/core_icon/r_1.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Fun & Convenient</p>
-                      <p>High personalized friends recommendation, </p>
-                      <p>fun and convenient experience in </p>
-                      <p>communication.</p>
+                      <p className="text-2xl mb-4">{t('features.funAndConvenient.title')}</p>
+                      <p>{t('features.funAndConvenient.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -282,12 +238,9 @@ export default function Home() {
                     </div>
                     <div className="ml-8">
                       <p className="text-2xl mb-4">
-                        Surf to earn & Rent to earn
+                      {t('features.socialToEarn.title')}
                       </p>
-                      <p>Surf to earn from advertisement slots and </p>
-                      <p>the data you delegate (recorded on-chain) to </p>
-                      <p>XPACE. Rent advertisement slots in your </p>
-                      <p>space directly to advertisers.</p>
+                      <p>{t('features.socialToEarn.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -295,9 +248,8 @@ export default function Home() {
                       <img src="/core_icon/r_3.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Expand your estates</p>
-                      <p>Create and expand your land and spaces in </p>
-                      <p>the X-city world.</p>
+                      <p className="text-2xl mb-4">{t('features.expandEstates.title')}</p>
+                      <p>{t('features.expandEstates.description')}</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -305,9 +257,8 @@ export default function Home() {
                       <img src="/core_icon/r_4.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Unique Algorithms</p>
-                      <p>XPACE&apos;s unique algorithms make your profit</p>
-                      <p>performance better.</p>
+                      <p className="text-2xl mb-4">{t('features.customerFirst.title')}</p>
+                      <p>{t('features.customerFirst.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -321,8 +272,7 @@ export default function Home() {
           <div className="hidden text-white lg:flex justify-around">
             <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
               <div className="hidden lg:block">
-                <p>Token-</p>
-                <p>omics</p>
+                <p>{t('tokenomics.title')}</p>
               </div>
             </div>
             {/* desktop */}
@@ -869,12 +819,12 @@ export default function Home() {
               JOIN THE FUTURE <br /> COMMUNITY
             </h1>
             <h1 className=" text-lg leading-[48px] font-medium font-[Montserrat] mt-6">
-              To meet many fun and smart people
+              {t('footer.subSlogan', { ns: 'common' })}
             </h1>
             <div className="block h-[100px] lg:hidden" />
             <button className={styles.follow}>Follow US </button>
             <h1 className="mt-8 font-medium font-[Montserrat]">
-              Get notified about important xpace updates
+              {t('footer.followUs.description', { ns: 'common' })}
             </h1>
           </div>
         </section>
