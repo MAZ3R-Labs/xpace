@@ -882,3 +882,12 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps = async ({ locale = '' }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['homepage', 'menu', 'common'])),
+      // Will be passed to the page component as props
+    },
+  }
+}
