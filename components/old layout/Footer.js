@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="self-center ">
             <ul className="flex">
               <li className="ml-16 ">
-                <Image src="/Logo.svg" width={132} height={30} />
+                <Image src="/Logo.svg" width={132} height={30} alt="" />
               </li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Twitter.svg" width={24} height={24} />
+                  <Image src="/Twitter.svg" width={24} height={24} alt="" />
                 </a>
               </li>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Discord.svg" width={24} height={24} />
+                  <Image src="/Discord.svg" width={24} height={24} alt="" />
                 </a>
               </li>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Mirror.svg" width={24} height={24} />
+                  <Image src="/Mirror.svg" width={24} height={24} alt="" />
                 </a>
               </li>
 
@@ -96,7 +96,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src="/Telegram.svg" width={24} height={24} />
+                  <Image src="/Telegram.svg" width={24} height={24} alt="" />
                 </a>
               </li>
             </ul>

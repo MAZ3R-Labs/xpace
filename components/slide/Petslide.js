@@ -24,19 +24,19 @@ export default function Petslide() {
           modules={[Autoplay, FreeMode]}
         >
           <SwiperSlide>
-          <Image src="/x_city/pet.png" width={160} height={160} />
+          <Image src="/x_city/pet.png" width={160} height={160} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-          <Image src="/x_city/pet.png" width={160} height={160} />
+          <Image src="/x_city/pet.png" width={160} height={160} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-          <Image src="/x_city/pet.png" width={160} height={160} />
+          <Image src="/x_city/pet.png" width={160} height={160} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-          <Image src="/x_city/pet.png" width={160} height={160} />
+          <Image src="/x_city/pet.png" width={160} height={160} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-          <Image src="/x_city/pet.png" width={160} height={160} />
+          <Image src="/x_city/pet.png" width={160} height={160} alt="" />
           </SwiperSlide>
           
         </Swiper>

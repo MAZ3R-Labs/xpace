@@ -24,28 +24,28 @@ export default function Planetslide() {
           modules={[Autoplay, FreeMode]}
         >
           <SwiperSlide>
-            <Image src="/x_city/planet.png" width={80} height={80} />
+            <Image src="/x_city/planet.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_1.png" width={80} height={80} />
+            <Image src="/x_city/planet_1.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_2.png" width={80} height={80} />
+            <Image src="/x_city/planet_2.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_3.png" width={80} height={80} />
+            <Image src="/x_city/planet_3.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_4.png" width={80} height={80} />
+            <Image src="/x_city/planet_4.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_5.png" width={80} height={80} />
+            <Image src="/x_city/planet_5.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_6.png" width={80} height={80} />
+            <Image src="/x_city/planet_6.png" width={80} height={80} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/planet_7.png" width={80} height={80} />
+            <Image src="/x_city/planet_7.png" width={80} height={80} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

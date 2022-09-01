@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link href="/">
           <li className="mr-6 self-center">
             <a>
-              <Image src="/Logo.svg" width={87} height={17} />
+              <Image src="/Logo.svg" width={87} height={17} alt="" />
             </a>
           </li>
         </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
         <Link href="/search">
           <li className="mr-6 float-right self-center">
             <a>
-              <Image src="/search.svg" width={28} height={25} />
+              <Image src="/search.svg" width={28} height={25} alt="" />
             </a>
           </li>
         </Link>

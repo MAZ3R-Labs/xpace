@@ -33,6 +33,7 @@ export default function MySwiper() {
               width={540}
               height={295}
               layout="responsive"
+              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -41,6 +42,7 @@ export default function MySwiper() {
               width={600}
               height={340}
               layout="responsive"
+              alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -49,6 +51,7 @@ export default function MySwiper() {
               width={540}
               height={295}
               layout="responsive"
+              alt=""
             />
           </SwiperSlide>
         </Swiper>
@@ -70,13 +73,13 @@ export default function MySwiper() {
           modules={[Navigation, EffectCoverflow]}
         >
           <SwiperSlide>
-            <Image src="/x_city/slide1.png" width={540} height={295} />
+            <Image src="/x_city/slide1.png" width={540} height={295} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/slide2.png" width={540} height={340} />
+            <Image src="/x_city/slide2.png" width={540} height={340} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/x_city/slide3.png" width={540} height={295} />
+            <Image src="/x_city/slide3.png" width={540} height={295} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -20,7 +20,7 @@ const xcity = () => {
         <div className="flex flex-col items-center text-white ">
           <div className="h-[100px] lg:h-[140px]" />
           <div className="block lg:hidden">
-            <Image src="/logo/Footer_logo.svg" width={60} height={60} />
+            <Image src="/logo/Footer_logo.svg" width={60} height={60} alt="" />
           </div>
           <div className="flex justify-center lg:justify-between w-full items-center">
             <h1 className=" lg:text-[32px] lg:text-left leading-10 font-[zero] text-center lg:ml-20">
@@ -28,7 +28,7 @@ const xcity = () => {
               BBS COMMUNITY
             </h1>
             <div className="hidden lg:mr-28 lg:block">
-              <Image src="/logo/Footer_logo.svg" width={62} height={62} />
+              <Image src="/logo/Footer_logo.svg" width={62} height={62} alt="" />
             </div>
           </div>
           <div className="flex justify-start lg:w-full">
@@ -71,6 +71,7 @@ const xcity = () => {
             width={1280}
             height={630}
             layout="responsive"
+            alt=""
           />
         </div>
         {/* 2nd background start */}
@@ -88,6 +89,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6"> Surf to earn </p>
             </div>
@@ -97,6 +99,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">Become KOL</p>
             </div>
@@ -106,6 +109,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">Space Travel</p>
             </div>
@@ -115,6 +119,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">Video Chat</p>
             </div>
@@ -126,6 +131,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <h1 className="mt-6"> Assets </h1>
             </div>
@@ -135,6 +141,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">Meet Friends</p>
             </div>
@@ -144,6 +151,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">Arena</p>
             </div>
@@ -153,6 +161,7 @@ const xcity = () => {
                 width={60}
                 height={60}
                 layout="fixed"
+                alt=""
               />
               <p className="mt-6">More fun</p>
             </div>
@@ -164,7 +173,7 @@ const xcity = () => {
           </div>
           <div className="h-[60px] block lg:hidden" />
           <div className="flex flex-col">
-            <Image src="/x_city/crown.svg" width={60} height={60} />
+            <Image src="/x_city/crown.svg" width={60} height={60}  alt="" />
             <p className="mt-3 text-center text-white text-[40px] leading-[48px] font-semibold">
               WHO IS
               <br />
@@ -177,6 +186,7 @@ const xcity = () => {
               width={1120}
               height={534}
               layout="responsive"
+              alt=""
             />
           </div>
 
@@ -193,6 +203,7 @@ const xcity = () => {
                 width={95}
                 height={43}
                 layout="fixed"
+                alt=""
               />
             </div>
 
@@ -202,6 +213,7 @@ const xcity = () => {
                 width={190}
                 height={86}
                 layout="fixed"
+                alt=""
               />
             </div>
             {/* 2nd background end */}

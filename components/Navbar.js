@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
@@ -16,7 +18,7 @@ const Navbar = () => {
             <Link href="/">
               <div className="absolute w-24 ml-6 md:mr-24 md:ml-20 self-center object-none cursor-pointer">
                 <a>
-                  <img src="/logo/Logo.svg" className=" object-none " />
+                  <img src="/logo/Logo.svg" className=" object-none" />
                 </a>
               </div>
             </Link>

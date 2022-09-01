@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
@@ -26,6 +28,7 @@ export default function Home() {
                     width={232}
                     height={300}
                     layout="fixed"
+                    alt=""
                   />
                 </div>
                 <div className="hidden lg:block">

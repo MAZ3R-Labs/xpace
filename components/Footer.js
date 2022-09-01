@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
@@ -9,10 +11,10 @@ const Footer = () => {
           <div className="self-center ">
             <ul className="flex">
               <li className="ml-3 lg:ml-16 ">
-                <Image src="/logo/Footer_logo.svg" width={30} height={30} />
+                <Image src="/logo/Footer_logo.svg" width={30} height={30} alt="" />
               </li>
               <li className="ml-3 ">
-                <Image src="/logo/Footer_logo_word.svg" width={80} height={30} />
+                <Image src="/logo/Footer_logo_word.svg" width={80} height={30} alt="" />
               </li>
             </ul>
           </div>
