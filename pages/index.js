@@ -174,7 +174,7 @@ export default function Home() {
           <section id="Core features">
             <div className="lg:flex justify-around text-white">
               {/* 左 */}
-              <div className="ml-6 lg:ml-0">
+              <div className="ml-6 lg:ml-6">
                 <div className="text-[40px] font-semibold leading-tight">
                   <p>{t('features.title')}</p>
                 </div>
