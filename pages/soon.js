@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-const soon = () => {
+const Soon = () => {
   const { t } = useTranslation(['common']);
 
   return (
@@ -12,7 +12,7 @@ const soon = () => {
   )
 }
 
-export default soon
+export default Soon
 
 export const getStaticProps = async ({ locale = '' }) => {
   return {
