@@ -22,6 +22,7 @@ export default function Home() {
                     width={232}
                     height={300}
                     layout="fixed"
+                    alt=""
                   />
                 </div>
                 <div className="hidden lg:block">
@@ -80,7 +81,7 @@ export default function Home() {
             <div className=" animate-moving">
               <img
                 src="Astronaut.png"
-                className="hidden lg:block max-w-full max-h-full -rotate-[3.78deg] "
+                className="hidden lg:block max-w-full max-h-full -rotate-[3.78deg]"
               />
             </div>
 
@@ -134,24 +135,14 @@ export default function Home() {
                 <div className={styles.about_bar}></div>
                 <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_1.png')] bg-right bg-no-repeat bg-cover bg-opacity-20">
                   <div className=" lg:mr-72 mb-5 pb-5">
-                    <p className="text-4xl ml-3 lg:ml-0 ">Data Justice</p>
+                    <p className="text-4xl ml-3 lg:ml-0 ">Increase Community Closeness</p>
                     <div className={styles.about_bar_m}></div>
                     <div className="hidden lg:block mt-5">
                       <p>
-                        Being one part of the web 3.0 philosophy, Xpace dedicate
-                        to realizing a data justice
+                        Integration of social tools and innovative responsive 3D social spaces
                       </p>
                       <p>
-                        world. The enormous profits of data should belong to
-                        data generators, not media
-                      </p>
-                      <p>
-                        magnates. Data generators, our users, are the boss of
-                        their data. With blockchain
-                      </p>
-                      <p>
-                        technology, the logs of authorization are recorded
-                        immutably and transparently.
+                        Enhance the closeness, fun and convenience among members
                       </p>
                     </div>
                     {/* mobile ver. */}
@@ -168,22 +159,18 @@ export default function Home() {
                 <div className={styles.about_bar_1}></div>
                 <div className="text-white lg:mr-[100px] lg:bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover">
                   <div className=" lg:mr-72 pb-5">
-                    <p className="text-4xl ml-3 lg:ml-0">Immersion</p>
+                    <p className="text-4xl ml-3 lg:ml-0">DAO / Surf to earn</p>
                     <div className={styles.about_bar_m1}></div>
                     <div className="hidden lg:block mt-5">
                       <p>
-                        Xpace wish you a brand new community experience, where
-                        you can meet
+                        Provide optional DAO smart contract tools
                       </p>
                       <p>
-                        people who share the same interests as you and interact
-                        with them with
+                        and different forms of monetization Let every community member experience
                       </p>
                       <p>
-                        exciting options. The immersive environments give you
-                        more inspiration
+                        becoming a core participant in the community
                       </p>
-                      <p>when you surf X-city.</p>
                     </div>
                     {/* mobile ver. */}
                     <div className="block lg:hidden bg-[url('/About_banner_2.png')] bg-right bg-no-repeat bg-cover mt-5 px-6">
@@ -208,11 +195,11 @@ export default function Home() {
                   <p>CORE</p>
                   <p>FEATURES</p>
                 </div>
-                <div className="mt-2 lg:mt-5">
+                {/* <div className="mt-2 lg:mt-5">
                   <p>You can find fun social</p>
                   <p>experiences here and earn </p>
                   <p>real money.</p>
-                </div>
+                </div> */}
               </div>
 
               <div className="lg:flex mt-6 lg:mt-0">
@@ -234,10 +221,10 @@ export default function Home() {
                       <img src="/core_icon/m_2.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Spaces/communities DAO</p>
-                      <p>Users can deploy DAO tokens for their own</p>
-                      <p>spaces/communities, then set rules and </p>
-                      <p>manage them by their own DAO token.</p>
+                      <p className="text-2xl mb-4">On-chain data controller</p>
+                      <p>Users control the level of data licensing and</p>
+                      <p>targeting and enjoy the profits of data sharing</p>
+                      <p>No longer dominated by social platforms.</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -282,12 +269,11 @@ export default function Home() {
                     </div>
                     <div className="ml-8">
                       <p className="text-2xl mb-4">
-                        Surf to earn & Rent to earn
+                        Surf to earn
                       </p>
-                      <p>Surf to earn from advertisement slots and </p>
-                      <p>the data you delegate (recorded on-chain) to </p>
-                      <p>XPACE. Rent advertisement slots in your </p>
-                      <p>space directly to advertisers.</p>
+                      <p>A variety of user profit mechanisms</p>
+                      <p>tMake every minute you spend on the community platform </p>
+                      <p>worth more and enjoy more</p>
                     </div>
                   </div>
                   <div className="flex justify-start lg:mt-[120px] mt-20">
@@ -305,9 +291,10 @@ export default function Home() {
                       <img src="/core_icon/r_4.svg" />
                     </div>
                     <div className="ml-8">
-                      <p className="text-2xl mb-4">Unique Algorithms</p>
-                      <p>XPACE&apos;s unique algorithms make your profit</p>
-                      <p>performance better.</p>
+                      <p className="text-2xl mb-4">Users are our core</p>
+                      <p>We aim to become a community platform </p>
+                      <p>that values the rights of users the most</p>
+                      <p>All suggestions and feelings of users are highly valued by us</p>
                     </div>
                   </div>
                 </div>
@@ -345,14 +332,13 @@ export default function Home() {
                   </p>
                   <div className=" mt-14 flex">
                     <div className="mr-6">
-                      <p className="text-2xl font-semibold leading-5">55%</p>
+                      <p className="text-2xl font-semibold leading-5">50%</p>
                       <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#00BDD7] to-white" />
                     </div>
                     <div>
                       <p className=" text-lg leading-5 font-semibold">
                         Ecosystem&Foundation
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
 
@@ -365,7 +351,6 @@ export default function Home() {
                       <p className=" text-lg leading-5 font-semibold">
                         Team&Advisors
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
 
@@ -378,7 +363,6 @@ export default function Home() {
                       <p className=" text-lg leading-5 font-semibold">
                         Liquidity
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                 </div>
@@ -394,7 +378,6 @@ export default function Home() {
                       <p className=" text-lg leading-5 font-semibold">
                         Private Sale
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                   <div className=" mt-12 flex">
@@ -406,7 +389,6 @@ export default function Home() {
                       <p className=" text-lg leading-5 font-semibold">
                         Public Sale
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                   <div className=" mt-12 flex">
@@ -416,9 +398,8 @@ export default function Home() {
                     </div>
                     <div>
                       <p className=" text-lg leading-5 font-semibold">
-                        Send Round
+                        Seed Round
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                   <div className=" mt-12 flex">
@@ -430,7 +411,6 @@ export default function Home() {
                       <p className=" text-lg leading-5 font-semibold">
                         Founding Team
                       </p>
-                      <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                     </div>
                   </div>
                 </div>
@@ -476,7 +456,6 @@ export default function Home() {
                   <p className=" text-lg leading-5 font-semibold">
                     Ecosystem&Foundation
                   </p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
 
@@ -489,7 +468,6 @@ export default function Home() {
                   <p className=" text-lg leading-5 font-semibold">
                     Team&Advisors
                   </p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
 
@@ -500,7 +478,6 @@ export default function Home() {
                 </div>
                 <div>
                   <p className=" text-lg leading-5 font-semibold">Liquidity</p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
               <div className=" mt-12 flex">
@@ -512,7 +489,6 @@ export default function Home() {
                   <p className=" text-lg leading-5 font-semibold">
                     Private Sale
                   </p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
               <div className=" mt-12 flex">
@@ -524,7 +500,6 @@ export default function Home() {
                   <p className=" text-lg leading-5 font-semibold">
                     Public Sale
                   </p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
               <div className=" mt-12 flex">
@@ -533,8 +508,7 @@ export default function Home() {
                   <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white" />
                 </div>
                 <div>
-                  <p className=" text-lg leading-5 font-semibold">Send Round</p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
+                  <p className=" text-lg leading-5 font-semibold">Seed Round</p>
                 </div>
               </div>
               <div className=" mt-12 flex">
@@ -546,7 +520,6 @@ export default function Home() {
                   <p className=" text-lg leading-5 font-semibold">
                     Founding Team
                   </p>
-                  <p className=" text-sm mt-2">5% TGE, 5% pubilc sale</p>
                 </div>
               </div>
               <div className="block lg:hidden">
@@ -581,11 +554,11 @@ export default function Home() {
                   </div>
                   <div className="md:w-[360px] md:h-[96px] bg-[#626DFF] bg-opacity-20 ">
                     <h6 className=" text-sm font-[Montserrat] pt-4 mr-6">
-                      X-city alpha
+                      X-city.MVP
                       <br />
                       First batch of citizens check-in
                       <br />
-                      Launch xpace community
+                      Launch community
                     </h6>
                   </div>
                 </div>
@@ -595,11 +568,9 @@ export default function Home() {
                     2023 Q2
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-8">
-                    Distribute the rest of the initial tokens x-pet plugin beta
+                    SDK
                     <br />
-                    Add bbs layer1 scenes for x-city
-                    <br />
-                    Add organizations scenes for x-city
+                    Release 2- tokens & NFTs
                   </h6>
                 </div>
                 {/* 2023 Q4 */}
@@ -608,9 +579,7 @@ export default function Home() {
                     2023 Q4
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-8">
-                    Organize the first fair in x-city
-                    <br />
-                    Launch xpa dao
+                    Launch browser plan
                   </h6>
                 </div>
               </div>
@@ -639,14 +608,9 @@ export default function Home() {
                     2023 Q1
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-8">
-                    Community and public sales
+                    X-city.Beta
                     <br />
-                    X-city browser version beta
-                    <br />
-                    X-city app version beta
-                    <br />
-                    X-city installation version beta <br />
-                    X-city sdk
+                    Release 1- tokens & NFTs
                   </h6>
                 </div>
                 <div className="mt-[70px]">
@@ -654,11 +618,9 @@ export default function Home() {
                     2023 Q3
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-8">
-                    X-Browser beta
+                    X-meet
                     <br />
-                    Add BBS layer2 scenes for X-city
-                    <br />
-                    Add Rooms
+                    Complete world system
                   </h6>
                 </div>
 
@@ -702,11 +664,11 @@ export default function Home() {
                   </div>
                   <div className="w-[250px] bg-[#626DFF] bg-opacity-20 ">
                     <h6 className=" text-sm font-[Montserrat] pt-2 pb-3 mr-6">
-                      X-city alpha
+                      X-city.MVP
                       <br />
                       First batch of citizens check-in
                       <br />
-                      Launch xpace community
+                      Launch community
                     </h6>
                   </div>
                 </div>
@@ -716,14 +678,9 @@ export default function Home() {
                     2023 Q1
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                    Community and public sales
+                    X-city.Beta
                     <br />
-                    X-city browser version beta
-                    <br />
-                    X-city app version beta
-                    <br />
-                    X-city installation version beta <br />
-                    X-city sdk
+                    Release 1- tokens & NFTs
                   </h6>
                 </div>
                 {/* 2023 Q2 */}
@@ -732,12 +689,9 @@ export default function Home() {
                     2023 Q2
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                    Distribute the rest of the initial tokens <br />
-                    x-pet plugin beta
+                    SDK
                     <br />
-                    Add bbs layer1 scenes for x-city
-                    <br />
-                    Add organizations scenes for x-city
+                    Release 2- tokens & NFTs
                   </h6>
                 </div>
                 {/* 2023 Q3 */}
@@ -746,11 +700,9 @@ export default function Home() {
                     2023 Q3
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                    X-Browser beta
+                    X-meet
                     <br />
-                    Add BBS layer2 scenes for X-city
-                    <br />
-                    Add Rooms
+                    Complete world system
                   </h6>
                 </div>
                 {/* 2023 Q4 */}
@@ -759,9 +711,7 @@ export default function Home() {
                     2023 Q4
                   </h6>
                   <h6 className=" text-sm font-[Montserrat] pt-2 pb-3">
-                    Organize the first fair in x-city
-                    <br />
-                    Launch xpa dao
+                    Launch browser plan
                   </h6>
                 </div>
                 {/* 2024 Q1 */}
