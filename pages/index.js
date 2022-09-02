@@ -795,35 +795,38 @@ export default function Home() {
           </div> */}
           {/* 3rd bg end */}
         </div>
-        {/* <section id="partner">
+        <section id="partner">
+          <div className="w-full text-center mt-8 text-[40px] font-semibold leading-tight text-white">
+            <p>ROADMAP</p>
+          </div>
           <div className="hidden lg:flex justify-center mt-20">
             <div className="mr-6">
-              <Image src="/partner/VC1.png" width={160} height={60} />
+              <Image src="/partner/VC1.png" width={160} height={60} alt="" />
             </div>
             <div className="mr-6">
-              <Image src="/partner/VC2.png" width={160} height={60} />
+              <Image src="/partner/VC2.png" width={160} height={60} alt="" />
             </div>
             <div className="mr-6">
-              <Image src="/partner/VC3.png" width={160} height={60} />
+              <Image src="/partner/VC3.png" width={160} height={60} alt="" />
             </div>
             <div className="mr-6">
-              <Image src="/partner/VC4.png" width={160} height={60} />
+              <Image src="/partner/VC4.png" width={160} height={60} alt="" />
             </div>
             <div className="mr-6">
-              <Image src="/partner/VC5.png" width={160} height={60} />
+              <Image src="/partner/VC5.png" width={160} height={60} alt="" />
             </div>
-          </div> */}
+          </div>
           {/* mobile */}
-          {/* <div className="flex flex-col items-center lg:hidden mt-20">
+          <div className="flex flex-col items-center lg:hidden mt-5">
             <div className="flex w-11/12 justify-center">
               <div className="mr-6">
-                <Image src="/partner/VC1.png" width={160} height={60} />
+                <Image src="/partner/VC1.png" width={160} height={60} alt="" />
               </div>
               <div className="mr-6">
-                <Image src="/partner/VC2.png" width={160} height={60} />
+                <Image src="/partner/VC2.png" width={160} height={60} alt="" />
               </div>
               <div>
-                <Image src="/partner/VC3.png" width={160} height={60} />
+                <Image src="/partner/VC3.png" width={160} height={60} alt="" />
               </div>
             </div>
             <div className="flex w-11/12 justify-center mt-10">
@@ -835,7 +838,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         <div className="h-[100px] lg:h-[160px]" />
         <section id="join">
           <div className="flex flex-col items-center lg:bg-[url('/background/bg4.png')] bg-no-repeat bg-cover pb-[200px] w-full text-white">
@@ -843,13 +846,26 @@ export default function Home() {
               JOIN THE FUTURE <br /> COMMUNITY
             </h1>
             <h1 className=" text-lg leading-[48px] font-medium font-[Montserrat] mt-6">
-              To meet many fun and smart people
+              Meet more smart and interesting communities and partners
             </h1>
             <div className="block h-[100px] lg:hidden" />
-            <button className={styles.follow}>Follow US </button>
-            <h1 className="mt-8 font-medium font-[Montserrat]">
-              Get notified about important xpace updates
+            <button className={styles.follow}>Register Now</button>
+            <h1 className="mt-8 font-medium font-[Montserrat] text-center">
+              Book now to become an early beta user<br />
+              Start accumulating your sailing miles and enjoy exclusive benefits
             </h1>
+            <div className="flex flex-row">
+              <div className="ml-5 text-center">
+                <button className={styles.follow}>Follow us</button>
+                <p>Receive our latest information and development reports</p>
+              </div>
+              <div className="ml-5 text-center">
+                <button className={styles.follow}>Contact us</button>
+                <p>We are looking for good partners<br />
+                If you share our vision and have any interesting partnership ideas,<br />
+                please feel free to contact us!</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
