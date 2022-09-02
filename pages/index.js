@@ -49,31 +49,55 @@ export default function Home() {
               </div>
               <div className="hidden lg:block text-white font-[Montserrat] text-sm mt-20">
                 <p>
-                  The XPACE team is building a super cool and convenient social
-                  platform
+                  A new community experience<br />
+                  A variety of interactive tools that allow you to meet and get to know people with common interests right away
                 </p>
+                <br />
                 <p>
-                  that you can govern and earn from your data in this social
-                  platform, X-city.
+                  Endless social activities<br />
+                  Experience a rich, fun and intuitive online social life with a variety of exciting and fun social games
                 </p>
+                <br />
                 <p>
-                  You can think of it as a hybrid of Reddit, Gather Town, and
-                  Facebook.
+                  Integrated community management tools<br />
+                  Integrate the most practical community management tools and optional DAO tools to make your community management more convenient / democratic
                 </p>
               </div>
               <div className="block lg:hidden text-white font-[Montserrat] text-sm mt-6 text-center px-3">
                 <p>
-                  The XPACE team is building a super cool and convenient social
-                  platform that you can govern and earn from your data in this
-                  social platform, X-city. You can think of it as a hybrid of
-                  Reddit, Gather Town, and Facebook.
+                  A new community experience<br />
+                  A variety of interactive tools that allow you to meet and get to know people with common interests right away
+                </p>
+                <br />
+                <p>
+                  Endless social activities<br />
+                  Experience a rich, fun and intuitive online social life with a variety of exciting and fun social games
+                </p>
+                <br />
+                <p>
+                  Integrated community management tools<br />
+                  Integrate the most practical community management tools and optional DAO tools to make your community management more convenient / democratic
                 </p>
               </div>
-              <div className="hidden lg:block mt-[60px] mb-80 ">
-                <button className={styles.discover}>Discover X-city </button>
+              <div className="hidden lg:block mt-[60px]">
+                <div className="flex flex-row">
+                  <button className={styles.discover}>Register Now</button>
+                  <p className="ml-3">Book now to become an early beta user<br />Start your mileage and offer premium benefits</p>
+                </div>
               </div>
               <div className="flex lg:hidden mt-6 justify-center">
-                <button className={styles.discover_m}>Discover X-city </button>
+                <button className={styles.discover_m}>Register Now</button>
+                <p className="ml-3">Book now to become an early beta user<br />Start your mileage and offer premium benefits</p>
+              </div>
+              <div className="hidden lg:block mt-10 mb-80 ">
+                <div className="flex flex-row">
+                  <button className={styles.discover}>Contact Us</button>
+                  <p className="ml-3">We are looking for good partners<br />Welcome to contact us</p>
+                </div>
+              </div>
+              <div className="flex lg:hidden mt-6 justify-center">
+                <button className={styles.discover_m}>Contact Us</button>
+                <p className="ml-3">We are looking for good partners<br />Welcome to contact us</p>
               </div>
             </div>
 
