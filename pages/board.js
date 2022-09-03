@@ -7,7 +7,7 @@ import MySwiper from "../components/slide/MySwiper";
 import Topics from "../components/Topics";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Board() {
   return (
     <div>
       <Head>
