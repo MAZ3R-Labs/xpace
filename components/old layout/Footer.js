@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="self-center ">
             <ul className="flex">
               <li className="ml-16 ">
-                <Image src="/Logo.svg" width={132} height={30} />
+                <Image src="/Logo.svg" width={200} height={30} />
               </li>
             </ul>
           </div>

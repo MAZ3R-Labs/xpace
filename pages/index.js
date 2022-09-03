@@ -332,8 +332,11 @@ export default function Home() {
           <div className="hidden text-white lg:flex justify-around">
             <div className="text-[40px] ml-20 mr-[218px] font-semibold leading-tight">
               <div className="hidden lg:block">
-                <p>Token-</p>
-                <p>omics</p>
+                <p>Tokenomics</p>
+              </div>
+              <div className="mt-10">
+                <p className="text-[20px]">AST Utility</p>
+                <p className="text-[20px]">XPA Governance</p>
               </div>
             </div>
             {/* desktop */}
@@ -345,7 +348,7 @@ export default function Home() {
               </div>
               <div className="flex text-2xl font-bold mt-7">
                 <p className="mr-[140px]">XPA</p>
-                <p className="mr-[94px]">50,000,000</p>
+                <p className="mr-[94px]">1,000,000,000</p>
                 <p>$0.1</p>
               </div>
               <div className="flex mt-[133px]">
@@ -417,7 +420,7 @@ export default function Home() {
                   </div>
                   <div className=" mt-12 flex">
                     <div className="mr-6">
-                      <p className="text-2xl font-semibold leading-5">10%</p>
+                      <p className="text-2xl font-semibold leading-5">15%</p>
                       <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white" />
                     </div>
                     <div>
@@ -528,7 +531,7 @@ export default function Home() {
               </div>
               <div className=" mt-12 flex">
                 <div className="mr-6">
-                  <p className="text-2xl font-semibold leading-5">10%</p>
+                  <p className="text-2xl font-semibold leading-5">15%</p>
                   <div className=" w-12 h-[2px] mt-5 bg-gradient-to-r from-[#1152FA] to-white" />
                 </div>
                 <div>
@@ -803,9 +806,9 @@ export default function Home() {
             <div className="mr-6">
               <Image src="/partner/VC1.png" width={160} height={60} alt="" />
             </div>
-            <div className="mr-6">
+            {/* <div className="mr-6">
               <Image src="/partner/VC2.png" width={160} height={60} alt="" />
-            </div>
+            </div> */}
             <div className="mr-6">
               <Image src="/partner/VC3.png" width={160} height={60} alt="" />
             </div>
@@ -822,9 +825,9 @@ export default function Home() {
               <div className="mr-6">
                 <Image src="/partner/VC1.png" width={160} height={60} alt="" />
               </div>
-              <div className="mr-6">
+              {/* <div className="mr-6">
                 <Image src="/partner/VC2.png" width={160} height={60} alt="" />
-              </div>
+              </div> */}
               <div>
                 <Image src="/partner/VC3.png" width={160} height={60} alt="" />
               </div>
@@ -855,13 +858,13 @@ export default function Home() {
               Start accumulating your sailing miles and enjoy exclusive benefits
             </h1>
             <div className="flex flex-row">
-              <div className="ml-5 text-center">
+              <div className="mr-5 text-center">
                 <button className={styles.follow}>Follow us</button>
-                <p>Receive our latest information and development reports</p>
+                <p className="mt-3">Receive our latest information and development reports</p>
               </div>
               <div className="ml-5 text-center">
                 <button className={styles.follow}>Contact us</button>
-                <p>We are looking for good partners<br />
+                <p className="mt-3">We are looking for good partners<br />
                 If you share our vision and have any interesting partnership ideas,<br />
                 please feel free to contact us!</p>
               </div>

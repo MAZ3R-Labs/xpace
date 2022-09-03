@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link href="/">
               <div className="absolute w-24 ml-6 md:mr-24 md:ml-20 self-center object-none cursor-pointer">
                 <a>
-                  <img src="/logo/Logo.svg" className=" object-none " />
+                  <img src="/logo/Logo.svg" className="object-fit" />
                 </a>
               </div>
             </Link>
