@@ -565,6 +565,11 @@ export default function Home() {
         <div className="lg:bg-[url('/background/bg3.svg')] bg-no-repeat bg-cover">
           <div className="h-[100px]  lg:h-[160px]" />
           <section id="Roadmap">
+            <img
+              className="mb-40"
+              src="/middle.svg"
+              width="100%"
+            />
             <div className="w-full text-center text-[40px] font-semibold leading-tight text-white">
               <p>ROADMAP</p>
             </div>
@@ -800,7 +805,7 @@ export default function Home() {
         </div>
         <section id="partner">
           <div className="w-full text-center mt-8 text-[40px] font-semibold leading-tight text-white">
-            <p>ROADMAP</p>
+            <p>PARTNERS</p>
           </div>
           <div className="hidden lg:flex justify-center mt-20">
             <div className="mr-6">
